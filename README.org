@@ -1,8 +1,9 @@
 #+TITLE: vscode-spacemacsy
+#+AUTHOR: hariprasadr1hp
 
-* Setup (Linux)
+** Setup (Linux)
 
-** Installing ~neovim~
+*** Installing ~neovim~
 
 #+BEGIN_SRC bash
 sudo add-apt-repository ppa:neovim-ppa/unstable
@@ -10,7 +11,7 @@ sudo apt update
 #+END_SRC
 
 
-** Cloning the repository
+*** Cloning the repository
 
 Clone this repository to the default Codium config folder
 #+BEGIN_SRC bash
@@ -18,11 +19,11 @@ cd ~/.config/Codium/User || cd ~/.config/Code/User
 git clone https://hariprasadr1hp/vscode-spacemacsy
 #+END_SRC
 
-** Installing Extensions
+*** Installing Extensions
 Within the application, launch VS Code Quick Open (Ctrl+P) 
-and run ~ext install $$~ 
+and run ~ext install <ext>~ 
 
-| Name                 | $$                                 |
+| Name                 | <ext>                              |
 | -------------------- | ---------------------------------- |
 | Neo Vim              | asvetliakov.vscode-neovim          |
 | vscode-dired         | rrudi.vscode-dired                 |
