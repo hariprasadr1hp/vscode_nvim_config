@@ -2,7 +2,16 @@
 
 * Setup (Linux)
 
+** Installing ~neovim~
+
+#+BEGIN_SRC bash
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt update
+#+END_SRC
+
+
 ** Cloning the repository
+
 Clone this repository to the default Codium config folder
 #+BEGIN_SRC bash
 cd ~/.config/Codium/User || cd ~/.config/Code/User
