@@ -1,0 +1,19 @@
+{
+	//print_format:
+	"print_format": {
+		"prefix": "print_format",
+		"body": [
+			"print(\"$1\".format($2))$0"
+		],
+		"description": "code snippet for print"
+	},
+	//with_open:
+	"with_open": {
+		"prefix": "with_open",
+		"body": [
+			"with open($1,'$2') as $3:",
+			"\t$0",
+		],
+		"description": "code snippet for open-file"
+	},
+}

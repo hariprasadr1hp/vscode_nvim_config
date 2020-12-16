@@ -1,0 +1,12 @@
+{
+	//jSRC:
+	"jSRC": {
+		"prefix": "jSRC",
+		"body": [
+			"#+BEGIN_SRC emacs-lisp$0",
+			"",
+			"#+END_SRC",
+		],
+		"description": "inserts code snippet"
+	},
+}

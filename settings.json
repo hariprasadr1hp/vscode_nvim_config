@@ -1,0 +1,50 @@
+//settings.json
+{
+    "editor.fontSize": 16,
+    "editor.rulers": [74,],
+    "window.zoomLevel": 1,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "C_Cpp.updateChannel": "Insiders",
+    "terminal.integrated.inheritEnv": false,
+    "http.proxySupport": "off",
+    "workbench.colorTheme": "Atom One Dark",
+    "cmake.configureOnOpen": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.activityBar.visible": true,
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": true,
+    "workbench.settings.useSplitJSON": true,
+    "workbench.sideBar.location": "left",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "code-runner.executorMap": {
+        "python": "$pythonPath -u $fullFileName",
+    },
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.showExecutionMessage": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.linting.pylintArgs": [
+        "--disable=C0111", //docstrings
+        "--disable=C0103", //casing-style
+        "--disable=C0326", //onespace after comma
+        
+    ],
+    "telemetry.enableCrashReporter": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/VSCodium/User/nvim/init.vim",
+    //"vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/Code/User/nvim/init.vim",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "editor.lineNumbers": "relative",
+    "window.menuBarVisibility": "hidden",
+    "vscode-neovim.textDecorationsAtTop": true,
+    "[magit]": {
+        "editor.lineNumbers": "on",
+        "editor.minimap.enabled": false,
+        "editor.renderWhitespace": "none"
+    },
+    "zenMode.hideLineNumbers": false,
+    "editor.cursorBlinking": "solid",
+    "code-runner.enableAppInsights": false,
+    "editor.minimap.enabled": false,
+}

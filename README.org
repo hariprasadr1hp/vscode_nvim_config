@@ -1,0 +1,32 @@
+#+TITLE: vscode-spacemacsy
+
+* Setup (Linux)
+
+** Cloning the repository
+Clone this repository to the default Codium config folder
+#+BEGIN_SRC bash
+cd ~/.config/Codium/User || cd ~/.config/Code/User
+git clone https://hariprasadr1hp/vscode-spacemacsy
+#+END_SRC
+
+** Installing Extensions
+Within the application, launch VS Code Quick Open (Ctrl+P) 
+and run ~ext install $$~ 
+
+| Name                 | $$                                 |
+| -------------------- | ---------------------------------- |
+| Neo Vim              | asvetliakov.vscode-neovim          |
+| vscode-dired         | rrudi.vscode-dired                 |
+| edamagit             | kahole.magit                       |
+| Org Mode             | vscode-org-mode.org-mode           |
+| fzf fuzzy quick open | rlivings39.fzf-quick-open          |
+| Gruvbox Theme        | jdinhlife.gruvbox                  |
+| Path Intellisense    | christian-kohler.path-intellisense |
+| PlantUML             | jebbs.plantuml                     |
+| C/C++                | ms-vscode.cpptools                 |
+| Python               | ms-python.python                   |
+| Code Runner          | formulahendry.code-runner          |
+| CMake                | twxs.cmake                         |
+| CMake Tools          | ms-vscode.cmake-tools              |
+| -------------------- | ---------------------------------- |
+ 

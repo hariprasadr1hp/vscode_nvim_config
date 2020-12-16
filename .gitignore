@@ -1,0 +1,7 @@
+#folders
+.vscode/
+globalStorage/
+workspaceStorage/
+
+#files
+nvim/temp.vim
