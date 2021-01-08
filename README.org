@@ -25,7 +25,7 @@ Within the application, launch VS Code Quick Open (Ctrl+P)
 and run ~ext install <ext>~ 
 
 | Name                 | <ext>                              |
-+ -------------------- | ---------------------------------- +
+| -------------------- | ---------------------------------- |
 | Neo Vim              | asvetliakov.vscode-neovim          |
 | vscode-dired         | rrudi.vscode-dired                 |
 | edamagit             | kahole.magit                       |
