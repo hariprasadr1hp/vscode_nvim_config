@@ -9,6 +9,9 @@ vnoremap > >gv
 " Select word
 nnoremap ,w viw
 
+" Yank from the cursor to the end of the line
+nnoremap Y y$
+
 " Within vscode
 " single-key mapping
 nnoremap <silent> <Space>x  :call VSCodeNotify('workbench.action.showCommands')<CR>
@@ -139,15 +142,11 @@ nnoremap <silent> <Space>ot :call VSCodeNotify('workbench.action.terminal.toggle
 " +project
 " ++ cmake
 nnoremap <silent> <Space>pcb :call VSCodeNotify('cmake.build')<CR>
-nnoremap <silent> <Space>pcB :call VSCodeNotify('cmake.outline.cleanRebuild')<CR>
 nnoremap <silent> <Space>pcc :call VSCodeNotify('cmake.configure')<CR>
-nnoremap <silent> <Space>pcC :call VSCodeNotify('cmake.outline.clean')<CR>
-nnoremap <silent> <Space>pcg :call VSCodeNotify('cmake.cleanConfigure')<CR>
+nnoremap <silent> <Space>pcC :call VSCodeNotify('cmake.cleanConfigure')<CR>
 nnoremap <silent> <Space>pch :call VSCodeNotify('cmake.onlineHelp')<CR>
-nnoremap <silent> <Space>pci :call VSCodeNotify('cmake.install')<CR>
 nnoremap <silent> <Space>pcl :call VSCodeNotify('cmake.launchTarget')<CR>
 nnoremap <silent> <Space>pcL :call VSCodeNotify('cmake.viewLog')<CR>
-nnoremap <silent> <Space>pco :call VSCodeNotify('cmake.outline.revealInCMakeLists')<CR>
 nnoremap <silent> <Space>pcq :call VSCodeNotify('cmake.outline.stop')<CR>
 nnoremap <silent> <Space>pcs :call VSCodeNotify('cmake.selectActiveFolder')<CR>
 nnoremap <silent> <Space>pcS :call VSCodeNotify('cmake.selectKit')<CR>
@@ -176,8 +175,8 @@ nnoremap <silent> <Space>sfs :call VSCodeNotify('fzf-quick-open.runFzfSearchPwd'
 nnoremap <silent> <Space>sw  :call VSCodeNotify('search.action.openNewEditorToSide')<CR>
 
 " +toggle
-nnoremap <silent> <Space>td :call VSCodeNotify('C_Cpp.SwitchHeaderSource')<CR>
 nnoremap <silent> <Space>tF :call VSCodeNotify('workbench.action.toggleFullScreen')<CR>
+nnoremap <silent> <Space>th :call VSCodeNotify('C_Cpp.SwitchHeaderSource')<CR>
 nnoremap <silent> <Space>to :call VSCodeNotify('workbench.action.output.toggleOutput')<CR>
 nnoremap <silent> <Space>tp :call VSCodeNotify('workbench.actions.view.toggleProblems')<CR>
 nnoremap <silent> <Space>tw :call VSCodeNotify('workbench.action.toggleEditorGroupLayout')<CR>
