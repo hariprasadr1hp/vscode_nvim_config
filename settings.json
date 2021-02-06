@@ -1,51 +1,82 @@
 //settings.json
 {
+    //###############################################
+    // telemetry   ##################################
+    //###############################################
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    //###############################################
+    // GUI Config   #################################
+    //###############################################
     "editor.fontSize": 16,
     "editor.rulers": [74,],
     "window.zoomLevel": 1,
-    "latex-workshop.view.pdf.viewer": "tab",
-    "C_Cpp.updateChannel": "Insiders",
-    "terminal.integrated.inheritEnv": false,
-    "http.proxySupport": "off",
-    "workbench.colorTheme": "Gruvbox Material Dark",
-    "cmake.configureOnOpen": false,
+    "editor.cursorBlinking": "solid",
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "window.menuBarVisibility": "hidden",
+    "zenMode.hideLineNumbers": false,
+    //###############################################
+    // workbench ####################################
+    //###############################################
+    "workbench.colorTheme": "Atom One Dark",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
     "workbench.sideBar.location": "left",
     "workbench.editor.enablePreviewFromQuickOpen": false,
+    //###############################################
+    // terminal   ###################################
+    //###############################################
+    "terminal.explorerKind": "external",
+    "terminal.integrated.inheritEnv": false,
+    //###############################################
+    // coding environment   #########################
+    //###############################################
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.enableAppInsights": false,
+    "code-runner.showExecutionMessage": false,
+    //############### cmake #########################
+    "cmake.configureOnOpen": false,
+    //############### http ##########################
+    "http.proxySupport": "off",
+    //############### latex #########################
+    "latex-workshop.view.pdf.viewer": "tab",
+    //################ cpp ##########################
+    "C_Cpp.updateChannel": "Insiders",
+    //################ svg ##########################
+    "svg.preview.mode": "svg",
+    //############### python ########################
     "code-runner.executorMap": {
         "python": "$pythonPath -u $fullFileName",
     },
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.showExecutionMessage": false,
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },
+    "python.pythonPath": "/home/hari/anaconda3/bin/python",
     "python.linting.pylintArgs": [
         "--disable=C0111", //docstrings
         "--disable=C0103", //casing-style
         "--disable=C0326", //onespace after comma
         
     ],
-    "telemetry.enableCrashReporter": false,
-    "editor.multiCursorModifier": "ctrlCmd",
+    //###############################################
+    // neovim   #####################################
+    //###############################################
     "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/VSCodium/User/nvim/init.vim",
     //"vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/Code/User/nvim/init.vim",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-    "editor.lineNumbers": "relative",
-    "window.menuBarVisibility": "hidden",
     "vscode-neovim.textDecorationsAtTop": true,
+    //###############################################
+    // magit ########################################
+    //###############################################
     "[magit]": {
         "editor.lineNumbers": "on",
         "editor.minimap.enabled": false,
         "editor.renderWhitespace": "none"
     },
-    "zenMode.hideLineNumbers": false,
-    "editor.cursorBlinking": "solid",
-    "code-runner.enableAppInsights": false,
-    "editor.minimap.enabled": false,
-    "python.pythonPath": "/home/hari/anaconda3/bin/python",
+    //###############################################
 }
