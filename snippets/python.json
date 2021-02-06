@@ -1,19 +1,28 @@
 {
-	//print_format:
-	"print_format": {
-		"prefix": "print_format",
+	//jprint:
+	"jprint": {
+		"prefix": "jprint",
 		"body": [
 			"print(\"$1\".format($2))$0"
 		],
 		"description": "code snippet for print"
 	},
-	//with_open:
-	"with_open": {
-		"prefix": "with_open",
+	//jwith_open:
+	"jwith_open": {
+		"prefix": "jwith_open",
 		"body": [
 			"with open($1,'$2') as $3:",
 			"\t$0",
 		],
 		"description": "code snippet for open-file"
+	},
+	//jdoc:
+	"jdoc": {
+		"prefix": "jdoc",
+		"body": [
+			":type $1: $2",
+			":param $1: $3$0",
+		],
+		"description": "snippet for arguments in the docstring"
 	},
 }
