@@ -39,31 +39,31 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+. ctrl+q",
+        "key": "ctrl+. ctrl+r",
         "command": "workbench.action.openRecent"
     },
     {
-        "key": "ctrl+. ctrl+b",
+        "key": "ctrl+, ctrl+b",
         "command": "breadcrumbs.focusAndSelect",
         "when": "breadcrumbsPossible"
     },
     {
-        "key": "ctrl+. ctrl+]",
+        "key": "ctrl+, ctrl+]",
         "command": "editor.action.inPlaceReplace.down",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+. ctrl+b",
+        "key": "ctrl+, ctrl+b",
         "command": "breadcrumbs.toggleToOn",
         "when": "!config.breadcrumbs.enabled"
     },
     {
-        "key": "ctrl+. ctrl+t",
+        "key": "ctrl+, ctrl+t",
         "command": "workbench.action.terminal.openNativeConsole",
         "when": "!terminalFocus"
     },
     {
-        "key": "ctrl+. ctrl+o",
+        "key": "ctrl+, ctrl+o",
         "command": "workbench.action.output.toggleOutput"
     },
     {
@@ -113,7 +113,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+. ctrl+w",
+        "key": "ctrl+, ctrl+w",
         "command": "editor.action.trimTrailingWhitespace",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -194,5 +194,101 @@
         "key": "ctrl+shift+f",
         "command": "-workbench.view.search",
         "when": "!searchViewletVisible"
+    },
+    {
+        "key": "ctrl+. ctrl+c",
+        "command": "editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "ctrl+. ctrl+v",
+        "command": "editor.action.clipboardPasteAction"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-editor.action.clipboardPasteAction"
+    },
+    {
+        "key": "ctrl+. ctrl+x",
+        "command": "editor.action.clipboardCutAction"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-editor.action.clipboardCutAction"
+    },
+    {
+        "key": "ctrl+. ctrl+a",
+        "command": "editor.action.selectAll"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-editor.action.selectAll"
+    },
+    {
+        "key": "ctrl+. ctrl+j",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+. ctrl+o",
+        "command": "workbench.action.files.openFile"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-workbench.action.files.openFile"
+    },
+    {
+        "key": "ctrl+. ctrl+i",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+. ctrl+z",
+        "command": "undo"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "-undo"
+    },
+    {
+        "key": "ctrl+. ctrl+y",
+        "command": "redo"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "-redo"
+    },
+    {
+        "key": "ctrl+. ctrl+r",
+        "command": "workbench.action.reloadWindow",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.reloadWindow",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+. ctrl+m",
+        "command": "editor.action.toggleTabFocusMode"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-editor.action.toggleTabFocusMode"
     },
 ]
