@@ -1,7 +1,7 @@
 {
-    //my_header
-    "my_header": {
-        "prefix": "my_header",
+    //jheader
+    "jheader": {
+        "prefix": "jheader",
         "body": [
             "#ifndef $1",
             "#define $1",
@@ -12,14 +12,30 @@
         ],
         "description": "creates header tags"
     },
-    //my_samplecpp
-    "my_samplecpp": {
-        "prefix": "my_samplecpp",
+    //jiostream
+    "jiostream": {
+        "prefix": "jiostream",
+        "body": [
+            "#include <iostream>$0",
+        ],
+        "description": "inserts #include <iostream>"
+    },
+    //jmath
+    "jmath": {
+        "prefix": "jmath",
+        "body": [
+            "#include \"math.h\"$0",
+        ],
+        "description": "inserts #include \"math.h\""
+    },
+    //jsamplecpp
+    "jsamplecpp": {
+        "prefix": "jsamplecpp",
         "body": [
             "#include <iostream>",
             "",
             "",
-            "int main(int argc, char *argv[])",
+            "int main(int argc, char const *argv[])",
             "{",
             "\t$0;",
             "\treturn 0;",
@@ -27,9 +43,9 @@
         ],
         "description": "creates barebone cpp"
     },
-    //my_mpistarter:
-    "my_mpistarter": {
-        "prefix": "my_mpistarter",
+    //jmpistarter:
+    "jmpistarter": {
+        "prefix": "jmpistarter",
         "body": [
             "int rank, size,ierr;",
             "MPI_Status status;",
@@ -42,17 +58,17 @@
         ],
         "description": "code snippet for barebone mpi"
     },
-    //cout_my:
-    "cout_my": {
-        "prefix": "cout_my",
+    //jcout:
+    "jcout": {
+        "prefix": "jcout",
         "body": [
             "std::cout << $1 << std::endl;$0",
         ],
         "description": "code snippet for cout"
     },
-    //print_my:
-    "print_my": {
-        "prefix": "print_my",
+    //jprint:
+    "jprint": {
+        "prefix": "jprint",
         "body": [
             "printf(\"$1\\n\"$2);$0",
         ],
