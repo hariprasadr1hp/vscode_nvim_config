@@ -13,6 +13,11 @@ nnoremap ,w viw
 nnoremap Y y$
 
 " Within vscode
+" error hopping
+nnoremap <silent> [g :call VSCodeNotify('editor.action.marker.prev')<CR>
+nnoremap <silent> ]g :call VSCodeNotify('editor.action.marker.next')<CR>
+
+
 " single-key mapping
 nnoremap <silent> <Space>x  :call VSCodeNotify('workbench.action.showCommands')<CR>
 nnoremap <silent> <Space>.  :call VSCodeNotify('breadcrumbs.focusAndSelect')<CR>
