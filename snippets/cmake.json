@@ -7,7 +7,7 @@
             "set (This $1)",
             "project(/$/{This/})",
             "",
-            "add_executable(/$/{This/} /bin/main.cpp)",
+            "add_executable(/$/{This/} /bin/main.cpp)"
         ],
         "description": "a barebone code for cmake"
     }

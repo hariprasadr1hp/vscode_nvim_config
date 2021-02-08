@@ -1,7 +1,6 @@
 {
-	//my_snippetAdd:
-	"my_snippetAdd": {
-		"prefix": "my_snippetAdd",
+	"jsnippetAdd": {
+		"prefix": "jsnippetAdd",
 		"body": [
 			"//$1:",
 			"\"$1\": {",
@@ -10,8 +9,8 @@
 				"\t\t$0",
 				"\t],",
 				"\t\"description\": \"$2\"",
-			"},",
+			"},"
 		],
 		"description": "snippet for adding snippet"
-	},
+	}
 }

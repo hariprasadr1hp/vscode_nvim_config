@@ -1,36 +1,31 @@
-//jinja code-blocks
 {
-	//jblock:
 	"jblock": {
 		"prefix": "jblock",
 		"body": [
 			"{% block $1 %}",
 			"$0",
-			"{% endblock $1 %}",
+			"{% endblock $1 %}"
 		],
 		"description": "code snippet for jinja block"
 	},
-	//jfor:
 	"jfor": {
 		"prefix": "jfor",
 		"body": [
 			"{% for $1 in $2 %}",
 			"$0",
-			"{% endfor %}",
+			"{% endfor %}"
 		],
 		"description": "code snipper for jinja for"
 	},
-	//jif:
 	"jif": {
 		"prefix": "jif",
 		"body": [
 			"{% if $1 %}",
 			"\t$0",
-			"{% endif %}",
+			"{% endif %}"
 		],
 		"description": "code snippet for jinja if"
 	},
-	//jifelse:
 	"jifelse": {
 		"prefix": "jifelse",
 		"body": [
@@ -38,130 +33,96 @@
 			"\t$0",
 			"{% else %}",
 			"", 
-			"{% endif %}",
+			"{% endif %}"
 		],
 		"description": "code snippet for jinja if"
 	},
-	//jextends:
 	"jextends": {
 		"prefix": "jextends",
 		"body": [
-			"{% extends '$1.html' %} $0",
+			"{% extends '$1.html' %} $0"
 		],
 		"description": "code snippet for jinja extends"
 	},
-	//jvar:
 	"jvar": {
 		"prefix": "jvar",
 		"body": [
-			"{{ $1 }} $0",
+			"{{ $1 }} $0"
 		],
 		"description": "code snippet for jinja variable"
 	},
-	//jfunc:
 	"jfunc": {
 		"prefix": "jfunc",
 		"body": [
-			"{% $1 %} $0",
+			"{% $1 %} $0"
 		],
 		"description": "code snippet for jinja function"
 	},
-	//jrandom:
 	"jrandom": {
 		"prefix": "jrandom",
 		"body": [
-			"{{ range($1, $2) | random }} $0",
+			"{{ range($1, $2) | random }} $0"
 		],
 		"description": "code snippet for jinja random"
 	},
-	//jjoin:
 	"jjoin": {
 		"prefix": "jjoin",
 		"body": [
-			"{% $1 | join(',') %} $0",
+			"{% $1 | join(',') %} $0"
 		],
 		"description": "code snippet for jinja join"
 	},
-	//jurl_for:
 	"jurl_for": {
 		"prefix": "jurl_for",
 		"body": [
-			"{{ url_for('$1', filename='$2') }} $0",
+			"{{ url_for('$1', filename='$2') }} $0"
 		],
 		"description": "code snippet for jinja url_for"
 	},
-	//jset:
 	"jset": {
 		"prefix": "jset",
 		"body": [
-			"{% set $1 = $2 %} $0",
+			"{% set $1 = $2 %} $0"
 		],
 		"description": "code snippet for jinja set"
 	},
-	//jcall:
 	"jcall": {
 		"prefix": "jcall",
 		"body": [
 			"{% call $1 %}",
 			"\t$0", 
-			"{% endcall %}",
+			"{% endcall %}"
 		],
 		"description": "code snippet for jinja call"
 	},
-	//jfilter:
 	"jfilter": {
 		"prefix": "jfilter",
 		"body": [
 			"{% filter $1 %}",
 			"\t$0",
-			"{% endfilter %}",
+			"{% endfilter %}"
 		],
 		"description": "code snippet for jinja filter"
 	},
-	//jimg:
 	"jimg": {
 		"prefix": "jimg",
 		"body": [
-			"<img src=\"{{ url_for('static', filename='$1') }}\" alt=\"$2\"> $0",
+			"<img src=\"{{ url_for('static', filename='$1') }}\" alt=\"$2\"> $0"
 		],
 		"description": "code snippet for jinja image-src"
 	},
-	//jfrom:
 	"jfrom": {
 		"prefix": "jfrom",
 		"body": [
-			"{% from '$1' import func %} $0",
+			"{% from '$1' import func %} $0"
 		],
 		"description": "code snippet for jinja from-import"
 	},
-	//jinclude:
 	"jinclude": {
 		"prefix": "jinclude",
 		"body": [
-			"{% include '$1' %} $0",
+			"{% include '$1' %} $0"
 		],
 		"description": "code snippet for jinja include"
-	},
+	}
 }
-
-
-
-
-// jblock	{% block name %} {% endblock name %}
-// jif	{% if cond %} {% endif %}
-// jifelse	{% if cond %} {% else %} {% endif %}
-// jextend	{% extends 'file' %}
-// jfor	{% for A in B %} {% endfor %}
-// jrandom	{{ range(MIN, MAX) | random }}
-// jvar	{{ variable }}
-// jfunc	{% function %}
-// jround	{% float | round %}
-// jjoin	{% list | join(',') %}
-// jset	{% set A = B %}
-// jurl	{{ url_for('dir', filename='file') }}
-// jcall	{% call func %} {% endcall %}
-// jfilter	{% filter cmd %} {% endfilter %}
-// jinclude	{% include 'file' %}
-// jfrom	{% from 'dir' import func %}
-// jimg	<img src="{{ url_for('static', filename='A') }}" alt="B">
-// jhref	a href with url_for embed

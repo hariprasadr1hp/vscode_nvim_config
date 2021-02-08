@@ -1,88 +1,78 @@
 {
-    //myrectangle:
-    "myrectangle": {
-        "prefix": "myrectangle",
+    "jjcheckmark": {
+        "prefix": "jjcheckmark",
+        "body": [
+        "\\def\\checkmark{\\tikz\\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}$0",
+        ],
+        "description": "custom checkmark definition"
+    },
+    "jrectangle": {
+        "prefix": "jrectangle",
         "body": [
             "\\draw[red,thick,dashed] ($1,$2) rectangle ($3,$4);",
-            "$0",
+            "$0"
         ],
         "description": "snippet for rectangle"
     },
-
-    //mycircle:
-    "mycircle": {
-        "prefix": "mycircle",
+    "jcircle": {
+        "prefix": "jcircle",
         "body": [
             "\\draw[red,thick,dashed] ($1,$2) circle ($3cm);",
-            "$0",
+            "$0"
         ],
         "description": "snippet for circle"
     },
-
-    //myellipse:
-    "myellipse": {
-        "prefix": "myellipse",
+    "jellipse": {
+        "prefix": "jellipse",
         "body": [
             "\\draw[red,thick,dashed] ($1,$2) ellipse ($3cm and $4cm);",
-            "$0",
+            "$0"
         ],
         "description": "snippet for ellipse"
     },
-
-    //myarc:
-    "myarc": {
-        "prefix": "myarc",
+    "jarc": {
+        "prefix": "jarc",
         "body": [
             "\\draw[red,thick,dashed] ($1,$2) arc ($3cm:$4cm);",
-            "$0",
+            "$0"
         ],
         "description": "snippet for arc"
     },
-
-    //myfill:
-    "myfill": {
-        "prefix": "myfill",
+    "jfill": {
+        "prefix": "jfill",
         "body": [
             "\\fill[blue!40!white] (0,0) rectangle (4,4);",
-            "$0",
+            "$0"
         ],
         "description": "snippet for fill"
     },
-
-    //myfilldraw:
-    "myfilldraw": {
-        "prefix": "myfilldraw",
+    "jfilldraw": {
+        "prefix": "jfilldraw",
         "body": [
             "\\filldraw[fill=blue!40!white, draw=black] (0,0) rectangle (4,4);",
-            "$0",
+            "$0"
         ],
         "description": "snippet for filldraw"
     },
-
-    //myfillgradient:
-    "myfillgradient": {
-        "prefix": "myfillgradient",
+    "jfillgradient": {
+        "prefix": "jfillgradient",
         "body": [
             "\\shade[left color=blue,right color=red] (0,0) rectangle (4,4);",
             "%left,right,top,bottom,inner,outer",
-            "$0",
+            "$0"
         ],
         "description": "snippet for fillgradient"
     },
-
-    //mygrid:
-    "mygrid": {
-        "prefix": "mygrid",
+    "jgrid": {
+        "prefix": "jgrid",
         "body": [
             "\\draw[step=1cm,gray,very thin] (-2,-2) grid (6,6);",
-            "$0",
+            "$0"
         ],
         "description": "snippet for grid"
     },
-
-    //myaxes:
-    "myaxes": {
-        "prefix": "myaxes",
+    "jaxes": {
+        "prefix": "jaxes",
         "body": [
             "\\draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {x axis};",
             "\\draw[thick,->] (0,0) -- (0,4.5) node[anchor=south east] {y axis};",
@@ -90,14 +80,12 @@
             "\\foreach \\x in {0,1,2,3,4}",
             "\\draw (\\x cm,1pt) -- (\\x cm,-1pt) node[anchor=north] {$\\x$};",
             "\\foreach \\y in {0,1,2,3,4}",
-            "\\draw (1pt,\\y cm) -- (-1pt,\\y cm) node[anchor=east] {$\\y$};",
+            "\\draw (1pt,\\y cm) -- (-1pt,\\y cm) node[anchor=east] {$\\y$};"
         ],
         "description": "snippet for axes"
     },
-
-    //my_report:
-    "my_report": {
-        "prefix": "my_report",
+    "jreport": {
+        "prefix": "jreport",
         "body": [
             "\\documentclass[10pt,a4paper]{report}",
             "\\usepackage[utf8]{inputenc}",
@@ -108,13 +96,12 @@
             "\\usepackage{graphicx}",
             "\\begin{document}",
             "\t$0",
-            "\\end{document}",
+            "\\end{document}"
         ],
         "description": "code snippet for quickstart(report)"
     },
-    //my_ppt:
-    "my_ppt": {
-        "prefix": "my_ppt",
+    "jppt": {
+        "prefix": "jppt",
         "body": [
             "\\documentclass[14pt]{beamer}",
             "\\usetheme{Luebeck}",
@@ -146,32 +133,26 @@
             "",
             "\\end{frame}",
             "",
-            "\\end {document}",
+            "\\end {document}"
         ],
         "description": "code snippet for presentation"
     },
-
-    //my_mathmode:
-    "my_mathmode": {
-        "prefix": "my_mathmode",
+    "jmathmode": {
+        "prefix": "jmathmode",
         "body": [
-            "$ $0 $",
+            "$ $0 $"
         ],
         "description": "Encloses with dollar signs"
     },
-
-    //my_commentline:
-    "my_commentline": {
-        "prefix": "my_commentline",
+    "jcommentline": {
+        "prefix": "jcommentline",
         "body": [
             "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
         ],
         "description": "comments the whole line to section"
     },
-
-    //my_flowchart:
-    "my_flowchart": {
-        "prefix": "my_flowchart",
+    "jflowchart": {
+        "prefix": "jflowchart",
         "body": [
             "\\tikzstyle{startstop} = [circle, radius=1cm, text centered, ",
             "draw=black, fill=black!100]",
@@ -191,11 +172,8 @@
             "\t\\draw [arrow] (start) -- node[anchor=west]{Input} (motion);",
             "\t\\draw [arrow] (motion) -- (maneuver);",
             "\t\\draw [arrow] (maneuver) -- node[anchor=west]{drive}(stop);",
-            "\\end{tikzpicture}",
+            "\\end{tikzpicture}"
         ],
         "description": "snippet for flowchart"
-    },
-
+    }
 }
-
-//

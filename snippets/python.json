@@ -50,6 +50,8 @@
 	"jcurry":{
 		"prefix": "jcurry",
 		"body": [
+			"from functools import partial",
+			"from inspect import signature",
 			"def curry(func):",
     		"\tdef inner(arg):",
         	"\t\tif len(signature(func).parameters) == 1:",

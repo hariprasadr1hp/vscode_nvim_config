@@ -1,5 +1,4 @@
 {
-    //jheader
     "jheader": {
         "prefix": "jheader",
         "body": [
@@ -12,23 +11,20 @@
         ],
         "description": "creates header tags"
     },
-    //jiostream
     "jiostream": {
         "prefix": "jiostream",
         "body": [
-            "#include <iostream>$0",
+            "#include <iostream>$0"
         ],
         "description": "inserts #include <iostream>"
     },
-    //jmath
     "jmath": {
         "prefix": "jmath",
         "body": [
-            "#include \"math.h\"$0",
+            "#include \"math.h\"$0"
         ],
         "description": "inserts #include \"math.h\""
     },
-    //jsamplecpp
     "jsamplecpp": {
         "prefix": "jsamplecpp",
         "body": [
@@ -39,11 +35,10 @@
             "{",
             "\t$0;",
             "\treturn 0;",
-            "}",
+            "}"
         ],
         "description": "creates barebone cpp"
     },
-    //jmpistarter:
     "jmpistarter": {
         "prefix": "jmpistarter",
         "body": [
@@ -54,24 +49,22 @@
             "MPI_Init(&argc, &argv);",
             "MPI_Comm_rank(MPI_COMM_WORLD, &rank);",
             "MPI_Comm_size(MPI_COMM_WORLD, &size);",
-            "MPI_Finalize();",
+            "MPI_Finalize();"
         ],
         "description": "code snippet for barebone mpi"
     },
-    //jcout:
     "jcout": {
         "prefix": "jcout",
         "body": [
-            "std::cout << $1 << std::endl;$0",
+            "std::cout << $1 << std::endl;$0"
         ],
         "description": "code snippet for cout"
     },
-    //jprint:
     "jprint": {
         "prefix": "jprint",
         "body": [
-            "printf(\"$1\\n\"$2);$0",
+            "printf(\"$1\\n\"$2);$0"
         ],
         "description": "code snippet for printf"
-    },
+    }
 }
