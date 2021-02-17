@@ -18,6 +18,11 @@ nnoremap <silent> [g :call VSCodeNotify('editor.action.marker.prev')<CR>
 nnoremap <silent> ]g :call VSCodeNotify('editor.action.marker.next')<CR>
 
 
+" comma shortcuts
+" python (initializing self variables, with curson on the variable)
+nnoremap ,ps viwyoself.<C-r>" = <C-r>"<C-[>
+
+
 " single-key mapping
 nnoremap <silent> <Space>x  :call VSCodeNotify('workbench.action.showCommands')<CR>
 nnoremap <silent> <Space>.  :call VSCodeNotify('breadcrumbs.focusAndSelect')<CR>
