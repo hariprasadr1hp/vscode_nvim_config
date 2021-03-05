@@ -22,7 +22,6 @@
     //###############################################
     "workbench.colorTheme": "Atom One Dark",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.activityBar.visible": false,
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
@@ -78,5 +77,6 @@
         "editor.minimap.enabled": false,
         "editor.renderWhitespace": "none"
     },
+    "workbench.activityBar.visible": false,
     //###############################################
 }

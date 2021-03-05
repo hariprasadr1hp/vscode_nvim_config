@@ -291,4 +291,14 @@
         "key": "ctrl+m",
         "command": "-editor.action.toggleTabFocusMode"
     },
+    {
+        "key": "ctrl+shift+. ctrl+shift+k",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
 ]
