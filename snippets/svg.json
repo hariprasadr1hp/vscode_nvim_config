@@ -1,4 +1,116 @@
 {
+    "jcircle": {
+        "prefix": "jcircle",
+        "body": [
+		"<circle",
+		"\tid=\"$1\"",
+		"\tcx=\"$2\" cy=\"$3\" r=\"$4\"",
+		"\tstyle=\"fill:#ffffff;stroke:#000000;stroke-width:1;",
+		"\tstroke-opacity:0.99;opacity:0.99\"",
+		"\tclass=\"$5\" >",
+		"</circle>$0"
+		],
+        "description": "svg sample for circle"
+    },
+    "jellipse": {
+        "prefix": "jellipse",
+        "body": [
+		"<ellipse",
+		"\tid=\"$1\"",
+		"\tcx=\"$2\"",
+		"\tcy=\"$3\"",
+		"\trx=\"$4\"",
+		"\try=\"$5\"",
+		"\tstyle=\"fill:#ffffff;stroke:#000000;stroke-width:1;",
+		"\tstroke-opacity:0.99;opacity:0.99\"",
+		"\tclass=\"$6\">",
+		"</ellipse>$0"
+        ],
+        "description": "svg snippet for ellipse"
+    },
+    "jline": {
+        "prefix": "jline",
+        "body": [
+		"<line",
+		"\tid=\"$1\"",
+		"\tx1=\"$2\" y1=\"$3\" x2=\"$4\" y2=\"$5\"  ",
+		"\tstyle=\"fill:#000000;stroke:#000000;stroke-width:1;",
+		"\tstroke-opacity:0.99;opacity:0.99\"",
+		"\tclass=\"$6\" >",
+		"</line>$0"
+		],
+        "description": "svg sample for line"
+    },
+    "jpath": {
+        "prefix": "jpath",
+        "body": [
+		"<path",
+		"\tid=\"$1\"",
+		"\td=\"$2\"",
+		"\tstyle=\"fill:#000000;stroke:#000000;stroke-width:1;",
+		"\tstroke-opacity:0.99;opacity:0.99\"",
+		"\tclass=\"$3\" >",
+		"</path>$0"
+		],
+        "description": [
+			"svg sample for polygon\n",
+			"d=\"M 100 100 L 300 100 L 200 300 z\"",
+			"M − moveto − move from one point to another point.",
+			"L − lineto − create a line.",
+			"H − horizontal lineto − create a horizontal line.",
+			"V − vertical lineto − create a vertical line.",
+			"C − curveto − create a curve.",
+			"S − smooth curveto − create a smooth curve.",
+			"Q − quadratic Bezier curve − create a quadratic Bezier curve.",
+			"T − smooth quadratic Bezier curveto − create a smooth quadratic Bezier curve",
+			"A − elliptical Arc − create a elliptical arc.",
+			"Z − closepath − close the path. "
+		]
+    },
+    "jpolyline": {
+        "prefix": "jpolyline",
+        "body": [
+		"<polygon",
+		"\tid=\"$1\"",
+		"\tpoints=\"$2,$3 $4,$5 $6,$7\"",
+		"\tstyle=\"fill:#000000;stroke:#000000;stroke-width:1;",
+		"\tstroke-opacity:0.99;opacity:0.99\"",
+		"\tclass=\"$8\" >",
+		"</polyline>$0"
+		],
+        "description": "svg sample for polyline"
+    },
+    "jpolygon": {
+        "prefix": "jpolygon",
+        "body": [
+		"<polygon",
+		"\tid=\"$1\"",
+		"\tpoints=\"$2,$3 $4,$5 $6,$7\"",
+		"\tstyle=\"fill:#ffffff;stroke:#000000;stroke-width:1;",
+		"\tstroke-opacity:0.99;opacity:0.99\"",
+		"\tclass=\"$8\" >",
+		"</polygon>$0"
+		],
+        "description": "svg sample for polygon"
+    },
+    "jrect": {
+        "prefix": "jrect",
+        "body": [
+		"<rect",
+		"\tid=\"$1\"",
+		"\tx=\"$2\"",
+		"\ty=\"$3\"",
+		"\twidth=\"$4\"",
+		"\theight=\"$5\"",
+		"\tstyle=\"fill:#ffffff;stroke:#000000;stroke-width:1;",
+		"\tstroke-opacity:0.99;opacity:0.99\"",
+		"\trx=\"0\"",
+		"\try=\"0\"",
+		"\tclass=\"$6\" >",
+		"</rect>$0"
+		],
+        "description": "svg sample for rectangle"
+    },
     "jsamplesvg": {
         "prefix": "jsamplesvg",
         "body": [
@@ -28,119 +140,6 @@
         ],
         "description": "svg sample snippet"
     },
-    "jellipse": {
-        "prefix": "jellipse",
-        "body": [
-		"<ellipse",
-		"\tid=\"$1\"",
-		"\tcx=\"$2\"",
-		"\tcy=\"$3\"",
-		"\trx=\"$4\"",
-		"\try=\"$5\"",
-		"\tstyle=\"fill:#ffffff;stroke:#000000;stroke-width:1;",
-		"\tstroke-opacity:0.99;opacity:0.99\"",
-		"\tclass=\"$6\">",
-		"</ellipse>$0"
-        ],
-        "description": "svg snippet for ellipse"
-    },
-    "jrect": {
-        "prefix": "jrect",
-        "body": [
-		"<rect",
-		"\tid=\"$1\"",
-		"\tx=\"$2\"",
-		"\ty=\"$3\"",
-		"\twidth=\"$4\"",
-		"\theight=\"$5\"",
-		"\tstyle=\"fill:#ffffff;stroke:#000000;stroke-width:1;",
-		"\tstroke-opacity:0.99;opacity:0.99\"",
-		"\trx=\"0\"",
-		"\try=\"0\"",
-		"\tclass=\"$6\" >",
-		"</rect>$0"
-		],
-        "description": "svg sample for rectangle"
-    },
-    "jcircle": {
-        "prefix": "jcircle",
-        "body": [
-		"<circle",
-		"\tid=\"$1\"",
-		"\tcx=\"$2\" cy=\"$3\" r=\"$4\"",
-		"\tstyle=\"fill:#ffffff;stroke:#000000;stroke-width:1;",
-		"\tstroke-opacity:0.99;opacity:0.99\"",
-		"\tclass=\"$5\" >",
-		"</circle>$0"
-		],
-        "description": "svg sample for circle"
-    },
-    "jline": {
-        "prefix": "jline",
-        "body": [
-		"<line",
-		"\tid=\"$1\"",
-		"\tx1=\"$2\" y1=\"$3\" x2=\"$4\" y2=\"$5\"  ",
-		"\tstyle=\"fill:#000000;stroke:#000000;stroke-width:1;",
-		"\tstroke-opacity:0.99;opacity:0.99\"",
-		"\tclass=\"$6\" >",
-		"</line>$0"
-		],
-        "description": "svg sample for line"
-    },
-    "jpolyline": {
-        "prefix": "jpolyline",
-        "body": [
-		"<polygon",
-		"\tid=\"$1\"",
-		"\tpoints=\"$2,$3 $4,$5 $6,$7\"",
-		"\tstyle=\"fill:#000000;stroke:#000000;stroke-width:1;",
-		"\tstroke-opacity:0.99;opacity:0.99\"",
-		"\tclass=\"$8\" >",
-		"</polyline>$0"
-		],
-        "description": "svg sample for polyline"
-    },
-    "jpolygon": {
-        "prefix": "jpolygon",
-        "body": [
-		"<polygon",
-		"\tid=\"$1\"",
-		"\tpoints=\"$2,$3 $4,$5 $6,$7\"",
-		"\tstyle=\"fill:#ffffff;stroke:#000000;stroke-width:1;",
-		"\tstroke-opacity:0.99;opacity:0.99\"",
-		"\tclass=\"$8\" >",
-		"</polygon>$0"
-		],
-        "description": "svg sample for polygon"
-    },
-    "jpath": {
-        "prefix": "jpath",
-        "body": [
-		"<path",
-		"\tid=\"$1\"",
-		"\td=\"$2\"",
-		"\tstyle=\"fill:#000000;stroke:#000000;stroke-width:1;",
-		"\tstroke-opacity:0.99;opacity:0.99\"",
-		"\tclass=\"$3\" >",
-		"</path>$0"
-		],
-        "description": [
-			"svg sample for polygon\n",
-			"d=\"M 100 100 L 300 100 L 200 300 z\"",
-			"M − moveto − move from one point to another point.",
-			"L − lineto − create a line.",
-			"H − horizontal lineto − create a horizontal line.",
-			"V − vertical lineto − create a vertical line.",
-			"C − curveto − create a curve.",
-			"S − smooth curveto − create a smooth curve.",
-			"Q − quadratic Bezier curve − create a quadratic Bezier curve.",
-			"T − smooth quadratic Bezier curveto − create a smooth quadratic Bezier curve",
-			"A − elliptical Arc − create a elliptical arc.",
-			"Z − closepath − close the path. "
-		]
-    },
-	//jtext
     "jtext": {
         "prefix": "jtext",
         "body": [
@@ -149,8 +148,5 @@
 		"</text>$0",
 		],
         "description": "svg sample for text"
-    },
-	//yettosnippetify
-	//jgradient
-	//
+    }
 }

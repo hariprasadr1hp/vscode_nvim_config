@@ -53,4 +53,5 @@ and run ~ext install <ext>~
 | VimL(Vim Language)          | xadillax.viml                      |
 | LTeX                        | valentjn.vscode-ltex               |
 | Email Viewer                | tomashubelbauer.email-viewer       |
+| Markdown Editor             | zaaack.markdown-editor             |
  

@@ -1,4 +1,11 @@
 {
+    "jcout": {
+        "prefix": "jcout",
+        "body": [
+            "std::cout << $1 << std::endl;$0"
+        ],
+        "description": "code snippet for cout"
+    },
     "jheader": {
         "prefix": "jheader",
         "body": [
@@ -25,20 +32,6 @@
         ],
         "description": "inserts #include \"math.h\""
     },
-    "jsamplecpp": {
-        "prefix": "jsamplecpp",
-        "body": [
-            "#include <iostream>",
-            "",
-            "",
-            "int main(int argc, char const *argv[])",
-            "{",
-            "\t$0;",
-            "\treturn 0;",
-            "}"
-        ],
-        "description": "creates barebone cpp"
-    },
     "jmpistarter": {
         "prefix": "jmpistarter",
         "body": [
@@ -53,18 +46,25 @@
         ],
         "description": "code snippet for barebone mpi"
     },
-    "jcout": {
-        "prefix": "jcout",
-        "body": [
-            "std::cout << $1 << std::endl;$0"
-        ],
-        "description": "code snippet for cout"
-    },
     "jprint": {
         "prefix": "jprint",
         "body": [
             "printf(\"$1\\n\"$2);$0"
         ],
         "description": "code snippet for printf"
+    },
+    "jsamplecpp": {
+        "prefix": "jsamplecpp",
+        "body": [
+            "#include <iostream>",
+            "",
+            "",
+            "int main(int argc, char const *argv[])",
+            "{",
+            "\t$0;",
+            "\treturn 0;",
+            "}"
+        ],
+        "description": "creates barebone cpp"
     }
 }

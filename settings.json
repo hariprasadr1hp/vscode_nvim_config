@@ -77,6 +77,6 @@
         "editor.minimap.enabled": false,
         "editor.renderWhitespace": "none"
     },
-    "workbench.activityBar.visible": false,
+    "editor.semanticHighlighting.enabled": true,
     //###############################################
 }
