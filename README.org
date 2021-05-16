@@ -31,6 +31,7 @@ and run ~ext install <ext>~
 | vscode-dired                | rrudi.vscode-dired                 |
 | C/C++                       | ms-vscode.cpptools                 |
 | Python                      | ms-python.python                   |
+| Rust                        | rust-lang.rust                     |
 | CMake                       | twxs.cmake                         |
 | CMake Tools                 | ms-vscode.cmake-tools              |
 | Path Intellisense           | christian-kohler.path-intellisense |
@@ -43,6 +44,7 @@ and run ~ext install <ext>~
 | CSV to Table                | phplasma.csv-to-table              |
 | Rainbow CSV                 | mechatroner.rainbow-csv            |
 | Markdown Preview            | bierner.markdown-mermaid           |
+| Better TOML                 | bungcip.better-toml                |
 | PlantUML                    | jebbs.plantuml                     |
 | fzf fuzzy quick open        | rlivings39.fzf-quick-open          |
 | Haskell                     | haskell.haskell                    |

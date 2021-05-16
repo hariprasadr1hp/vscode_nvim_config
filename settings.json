@@ -78,5 +78,7 @@
         "editor.renderWhitespace": "none"
     },
     "editor.semanticHighlighting.enabled": true,
+    "workbench.activityBar.visible": false,
+    "workbench.editor.untitled.hint": "hidden",
     //###############################################
 }
