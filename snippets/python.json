@@ -166,7 +166,7 @@
 	"jrepr": {
 		"prefix": "jrepr",
 		"body": [
-			"def __repr__(self):",
+			"def __repr__(self) -> str:",
 			"\t$0"
 		],
 		"description": "snippet for __repr__"
