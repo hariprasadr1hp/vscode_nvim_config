@@ -6,26 +6,44 @@
 vnoremap < <gv
 vnoremap > >gv
 
+
 " Select word
 nnoremap ,w viw
+
 
 " Yank from the cursor to the end of the line
 nnoremap Y y$
 
+
 " Within vscode
-" error hopping
-nnoremap <silent> [g :call VSCodeNotify('editor.action.marker.prev')<CR>
-nnoremap <silent> ]g :call VSCodeNotify('editor.action.marker.next')<CR>
-
-
 " comma shortcuts
 " python (initializing self variables, with curson on the variable)
-nnoremap ,ps viwyoself.<C-r>" = <C-r>"<C-[>
+nnoremap ,ps yiwoself.<C-r>" = <C-r>"<C-[>
 
 
 " single-key mapping
 nnoremap <silent> <Space>x  :call VSCodeNotify('workbench.action.showCommands')<CR>
 nnoremap <silent> <Space>.  :call VSCodeNotify('breadcrumbs.focusAndSelect')<CR>
+
+" error hopping
+nnoremap <silent> [g :call VSCodeNotify('editor.action.marker.prev')<CR>
+nnoremap <silent> ]g :call VSCodeNotify('editor.action.marker.next')<CR>
+
+" error hopping
+nnoremap <silent> [e :call VSCodeNotify('editor.action.marker.prev')<CR>
+nnoremap <silent> ]e :call VSCodeNotify('editor.action.marker.next')<CR>
+
+
+" miscellaneous
+nnoremap <silent> <Space>[( msF[mh%r)`hr(`s
+nnoremap <silent> <Space>[) msF[mh%r)`hr(`s
+nnoremap <silent> <Space>]( msF[mh%r)`hr(`s
+nnoremap <silent> <Space>]) msF[mh%r)`hr(`s
+
+nnoremap <silent> <Space>([ msF(mh%r]`hr[`s
+nnoremap <silent> <Space>(] msF(mh%r]`hr[`s
+nnoremap <silent> <Space>)[ msF(mh%r]`hr[`s
+nnoremap <silent> <Space>)] msF(mh%r]`hr[`s
 
 " +action
 nnoremap <silent> <Space>ao :call VSCodeNotify('workbench.output.action.clearOutput')<CR>
@@ -41,8 +59,9 @@ nnoremap <silent> <Space>bb :call VSCodeNotify('workbench.action.quickOpen')<CR>
 nnoremap <silent> <Space>bk :call VSCodeNotify('workbench.action.closeActiveEditor')<CR>
 nnoremap <silent> <Space>bN :call VSCodeNotify('workbench.action.files.newUntitledFile')<CR>
 
-" +code
+
 nnoremap <silent> <Space>cd :call VSCodeNotify('editor.action.revealDefinition')<CR>
+" +code
 nnoremap <silent> <Space>ch :call VSCodeNotify('editor.action.showHover')<CR>
 nnoremap <silent> <Space>ci :call VSCodeNotify('editor.action.revealDefinitionAside')<CR>
 nnoremap <silent> <Space>cr :call VSCodeNotify('editor.action.goToReferences')<CR>
@@ -77,6 +96,7 @@ nnoremap <silent> <Space>ev :vs $HOME/.config/VSCodium/User/nvim/codium.vim<CR>
 nnoremap <silent> <Space>fp :vs $HOME/.config/VSCodium/User/nvim/codium.vim<CR>
 nnoremap <silent> <Space>fs :call VSCodeNotify('workbench.action.files.save')<CR>
 nnoremap <silent> <Space>fz :call VSCodeNotify('workbench.action.toggleZenMode')<CR>
+
 
 " +git
 " b - Magit switch branch
@@ -116,11 +136,13 @@ nnoremap <silent> <Space>gy :call VSCodeNotify('magit.remoting')<CR>
 nnoremap <silent> <Space>gh :call VSCodeNotify('magit.help')<CR>
 nnoremap <silent> <Space>gg :call VSCodeNotify('magit.status')<CR>
 
+
 " +help
 nnoremap <silent> <Space>hk :call VSCodeNotify('workbench.action.openGlobalKeybindings')<CR>
 nnoremap <silent> <Space>hK :call VSCodeNotify('workbench.action.openGlobalKeybindingsFile')<CR>
 nnoremap <silent> <Space>hs :call VSCodeNotify('workbench.action.openGlobalSettings')<CR>
 nnoremap <silent> <Space>ht :call VSCodeNotify('workbench.action.selectTheme')<CR>
+
 
 " +insert
 nnoremap <silent> <Space>ic :r !<right>  
@@ -129,25 +151,26 @@ nnoremap <silent> <Space>if :r %f<CR>
 nnoremap <silent> <Space>im i$$<CR><CR>$$<Esc>ki
 
 
-
-" +latex
-nnoremap <silent> <Space>lb :call VSCodeNotify('latex-workshop.build')<CR>
-nnoremap <silent> <Space>lc :call VSCodeNotify('latex-workshop.clean')<CR>
-nnoremap <silent> <Space>lv :call VSCodeNotify('latex-workshop.view')<CR>
-vnoremap <silent> <Space>llb di\textbf{}<Esc>hp
-vnoremap <silent> <Space>lli di\emph{}<Esc>hp
-vnoremap <silent> <Space>llm di$$<Esc>hp
-nnoremap <silent> <Space>llM i$$<CR><CR>$$<Esc>ki
-vnoremap <silent> <Space>llt di\texttt{}<Esc>hp
-vnoremap <silent> <Space>llu di\underline{}<Esc>hp
+" +lsp
+nnoremap <silent> <Space>lr :call VSCodeNotify('editor.action.rename')<CR>
+nnoremap <silent> <Space>lo :call VSCodeNotify('editor.action.revealDefinition')<CR>
 
 
-
-" +misc
+" +latex(m)
+nnoremap <silent> <Space>mb :call VSCodeNotify('latex-workshop.build')<CR>
+nnoremap <silent> <Space>mc :call VSCodeNotify('latex-workshop.clean')<CR>
+nnoremap <silent> <Space>mv :call VSCodeNotify('latex-workshop.view')<CR>
+vnoremap <silent> <Space>mlb di\textbf{}<Esc>hp
+vnoremap <silent> <Space>mli di\emph{}<Esc>hp
+vnoremap <silent> <Space>mlm di$$<Esc>hp
+nnoremap <silent> <Space>mlM i$$<CR><CR>$$<Esc>ki
+vnoremap <silent> <Space>mlt di\texttt{}<Esc>hp
+vnoremap <silent> <Space>mlu di\underline{}<Esc>hp
 
 
 " +open
 nnoremap <silent> <Space>ot :call VSCodeNotify('workbench.action.terminal.toggleTerminal')<CR>
+
 
 " +project
 " ++ cmake
@@ -183,13 +206,18 @@ nnoremap <silent> <Space>qr :call VSCodeNotify('workbench.action.reloadWindow')<
 nnoremap <silent> <Space>sff :call VSCodeNotify('fzf-quick-open.runFzfFilePwd')<CR>
 nnoremap <silent> <Space>sfs :call VSCodeNotify('fzf-quick-open.runFzfSearchPwd')<CR>
 nnoremap <silent> <Space>sw  :call VSCodeNotify('search.action.openNewEditorToSide')<CR>
+nnoremap <silent> <Space>ss  :%s/\v
+vnoremap <silent> <Space>ss  :s/\v
+
 
 " +toggle
 nnoremap <silent> <Space>tF :call VSCodeNotify('workbench.action.toggleFullScreen')<CR>
 nnoremap <silent> <Space>th :call VSCodeNotify('C_Cpp.SwitchHeaderSource')<CR>
+nnoremap <silent> <Space>tm :call VSCodeNotify('workbench.action.toggleMenuBar')<CR>
 nnoremap <silent> <Space>to :call VSCodeNotify('workbench.action.output.toggleOutput')<CR>
 nnoremap <silent> <Space>tp :call VSCodeNotify('workbench.actions.view.toggleProblems')<CR>
 nnoremap <silent> <Space>tw :call VSCodeNotify('workbench.action.toggleEditorGroupLayout')<CR>
+
 
 " +window
 " nnoremap <silent> <Space>wb <C-^>
