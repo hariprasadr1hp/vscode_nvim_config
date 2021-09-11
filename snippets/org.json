@@ -18,6 +18,7 @@
 		],
 		"description": "sample cpp source block"
 	},
+
 	"jcss1": {
 		"prefix": "jcss1",
 		"body": [
@@ -25,6 +26,7 @@
 		],
 		"description": "css template 1"
 	},
+
 	"jcss2": {
 		"prefix": "jcss2",
 		"body": [
@@ -37,6 +39,7 @@
 		],
 		"description": "css template 2"
 	},
+
 	"jmatplotlib": {
 		"prefix": "jmatplotlib",
 		"body": [
@@ -57,6 +60,7 @@
 		],
 		"description": "python source block for matplotlib"
 	},
+
 	"jplantumlMindmap": {
 		"prefix": "jplantumlMindmap",
 		"body": [
@@ -77,6 +81,7 @@
 		],
 		"description": "plantuml source block for mindmap"
 	},
+
 	"jplantumlProcess": {
 		"prefix": "jplantumlProcess",
 		"body": [
@@ -101,18 +106,19 @@
 	"jpython": {
 		"prefix": "jpython",
 		"body": [
-			"#+name: $1",
-			"#+header: :var $2=$3 $4=$5",
+			"#+name: ${1:NAME}",
+			"#+header: :var ${2:PARAMETER1}=${3:VALUE1} ${4:PARAMETER2}=${5:VALUE2}",
 			"#+begin_src python :noweb yes",
-			"return $6",
-			"#+end_src$0"
+			"return $0",
+			"#+end_src"
 		],
 		"description": "sample python source block"
 	},
+
 	"jTBLFM": {
 		"prefix": "jTBLFM",
 		"body": [
-			"#+TBLFM: $1='(org-sbe \"$1\" ($2 $3)($4 $5))::$6='(org-sbe \"$7\" ($8 $9)($10 $11 $12))",
+			"#+TBLFM: $1='(org-sbe \"${1:FUNCTION}\" (${2:PARAMETER1} ${3:VALUE1})(${4:PARAMETER2} ${5:VALUE2}))::$6='(org-sbe \"$7\" ($8 $9)($10 $11 $12))",
 		],
 		"description": "python source block template"
 	}

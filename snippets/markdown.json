@@ -1,10 +1,10 @@
 {
-	"mybash": {
-		"prefix": "mybash",
+	"jbash": {
+		"prefix": "jbash",
 		"body": [
 			"```bash",
-			"$1",
-			"```$0"
+			"$0",
+			"```"
 		],
 		"description": "code snippet for bash"
 	}

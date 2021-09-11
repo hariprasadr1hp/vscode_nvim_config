@@ -2,7 +2,6 @@
 	"jsnippetAdd": {
 		"prefix": "jsnippetAdd",
 		"body": [
-			"//$1:",
 			"\"$1\": {",
 				"\t\"prefix\": \"$1\",",
 				"\t\"body\": [",

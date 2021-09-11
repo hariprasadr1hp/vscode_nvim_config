@@ -7,6 +7,7 @@
         ],
         "description": "snippet for arc"
     },
+    
     "jaxes": {
         "prefix": "jaxes",
         "body": [
@@ -17,9 +18,10 @@
             "\\draw (\\x cm,1pt) -- (\\x cm,-1pt) node[anchor=north] {$\\x$};",
             "\\foreach \\y in {0,1,2,3,4}",
             "\\draw (1pt,\\y cm) -- (-1pt,\\y cm) node[anchor=east] {$\\y$};"
-        ],
+    ],
         "description": "snippet for axes"
     },
+
     "jjcheckmark": {
         "prefix": "jjcheckmark",
         "body": [
@@ -27,6 +29,7 @@
         ],
         "description": "custom checkmark definition"
     },
+
     "jcircle": {
         "prefix": "jcircle",
         "body": [
@@ -35,6 +38,7 @@
         ],
         "description": "snippet for circle"
     },
+    
     "jellipse": {
         "prefix": "jellipse",
         "body": [
@@ -43,6 +47,7 @@
         ],
         "description": "snippet for ellipse"
     },
+
     "jflowchart": {
         "prefix": "jflowchart",
         "body": [
@@ -68,6 +73,7 @@
         ],
         "description": "snippet for flowchart"
     },
+
     "jcommentline": {
         "prefix": "jcommentline",
         "body": [
@@ -75,6 +81,7 @@
         ],
         "description": "comments the whole line to section"
     },
+
     "jfill": {
         "prefix": "jfill",
         "body": [
@@ -83,6 +90,7 @@
         ],
         "description": "snippet for fill"
     },
+
     "jfilldraw": {
         "prefix": "jfilldraw",
         "body": [
@@ -91,6 +99,7 @@
         ],
         "description": "snippet for filldraw"
     },
+
     "jfillgradient": {
         "prefix": "jfillgradient",
         "body": [
@@ -100,6 +109,7 @@
         ],
         "description": "snippet for fillgradient"
     },
+
     "jgrid": {
         "prefix": "jgrid",
         "body": [
@@ -108,6 +118,7 @@
         ],
         "description": "snippet for grid"
     },
+
     "jmathmode": {
         "prefix": "jmathmode",
         "body": [
@@ -115,6 +126,7 @@
         ],
         "description": "Encloses with dollar signs"
     },
+
     "jppt": {
         "prefix": "jppt",
         "body": [
@@ -152,6 +164,7 @@
         ],
         "description": "code snippet for presentation"
     },
+
     "jrectangle": {
         "prefix": "jrectangle",
         "body": [
@@ -160,6 +173,7 @@
         ],
         "description": "snippet for rectangle"
     },
+
     "jreport": {
         "prefix": "jreport",
         "body": [

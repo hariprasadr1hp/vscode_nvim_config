@@ -2,80 +2,90 @@
 	"jblock": {
 		"prefix": "jblock",
 		"body": [
-			"{% block $1 %}",
+			"{% block ${1:VARNAME} %}",
 			"$0",
-			"{% endblock $1 %}"
+			"{% endblock ${1:VARNAME} %}"
 		],
 		"description": "code snippet for jinja block"
 	},
+
 	"jcall": {
 		"prefix": "jcall",
 		"body": [
-			"{% call $1 %}",
+			"{% call ${1:VARNAME} %}",
 			"\t$0", 
 			"{% endcall %}"
 		],
 		"description": "code snippet for jinja call"
 	},
+
 	"jextends": {
 		"prefix": "jextends",
 		"body": [
-			"{% extends '$1.html' %} $0"
+			"{% extends '${1:FILENAME}.html' %}",
+			"$0"
 		],
 		"description": "code snippet for jinja extends"
 	},
+
 	"jfilter": {
 		"prefix": "jfilter",
 		"body": [
-			"{% filter $1 %}",
+			"{% filter ${1:VARNAME} %}",
 			"\t$0",
 			"{% endfilter %}"
 		],
 		"description": "code snippet for jinja filter"
 	},
+
 	"jfor": {
 		"prefix": "jfor",
 		"body": [
-			"{% for $1 in $2 %}",
-			"$0",
+			"{% for ${1:EACH} in ${2:CONTAINER} %}",
+			"${0:FILL_CONTENTS}",
 			"{% endfor %}"
 		],
 		"description": "code snipper for jinja for"
 	},
+
 	"jfrom": {
 		"prefix": "jfrom",
 		"body": [
-			"{% from '$1' import func %} $0"
+			"{% from '${1:MODULE_NAME}' import func %} $0"
 		],
 		"description": "code snippet for jinja from-import"
 	},
+
 	"jfunc": {
 		"prefix": "jfunc",
 		"body": [
-			"{% $1 %} $0"
+			"{% ${1:FUNCTION_NAME} %} $0"
 		],
 		"description": "code snippet for jinja function"
 	},
+
 	"jif": {
 		"prefix": "jif",
 		"body": [
-			"{% if $1 %}",
-			"\t$0",
+			"{% if ${1:CONDITION} %}",
+			"\t${0:FILL_CONTENTS}",
 			"{% endif %}"
 		],
 		"description": "code snippet for jinja if"
 	},
+
 	"jifelse": {
 		"prefix": "jifelse",
 		"body": [
-			"{% if $1 %}",
-			"\t$0",
+			"{% if ${1:CONDITION} %}",
+			"\t${0:FILL_CONTENTS}",
 			"{% else %}",
 			"", 
 			"{% endif %}"
 		],
 		"description": "code snippet for jinja if"
 	},
+
 	"jimg": {
 		"prefix": "jimg",
 		"body": [
@@ -83,6 +93,7 @@
 		],
 		"description": "code snippet for jinja image-src"
 	},
+
 	"jinclude": {
 		"prefix": "jinclude",
 		"body": [
@@ -90,6 +101,7 @@
 		],
 		"description": "code snippet for jinja include"
 	},
+
 	"jjoin": {
 		"prefix": "jjoin",
 		"body": [
@@ -97,20 +109,31 @@
 		],
 		"description": "code snippet for jinja join"
 	},
+
+	"jlink": {
+		"prefix": "jlink",
+		"body": [ 
+			"<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='/css/main.css') }}\">",
+		],
+		"description": "hp snippet css link"
+	},
+
 	"jrandom": {
 		"prefix": "jrandom",
 		"body": [
-			"{{ range($1, $2) | random }} $0"
+			"{{ range(${1:START}, ${2:STOP}) | random }} $0"
 		],
 		"description": "code snippet for jinja random"
 	},
+
 	"jset": {
 		"prefix": "jset",
 		"body": [
-			"{% set $1 = $2 %} $0"
+			"{% set ${1:SET_PARAMETER} = ${2:VALUE} %} $0"
 		],
 		"description": "code snippet for jinja set"
 	},
+
 	"jurl_for": {
 		"prefix": "jurl_for",
 		"body": [
@@ -118,10 +141,11 @@
 		],
 		"description": "code snippet for jinja url_for"
 	},
+	
 	"jvar": {
 		"prefix": "jvar",
 		"body": [
-			"{{ $1 }} $0"
+			"{{ ${1:VAR_NAME} }} $0"
 		],
 		"description": "code snippet for jinja variable"
 	},

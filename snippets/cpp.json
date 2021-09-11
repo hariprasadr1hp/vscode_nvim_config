@@ -2,22 +2,52 @@
     "jcout": {
         "prefix": "jcout",
         "body": [
-            "std::cout << $1 << std::endl;$0"
+            "std::cout << ${1:\"hello\"} << std::endl;$0"
         ],
-        "description": "code snippet for cout"
+        "description": "hp a std::cout line"
     },
+
+    "jforeach": {
+        "prefix": "jforeach",
+        "body": [
+            "for(auto &&i : ${1:CONTAINER}){",
+            "\t$0",
+            "}"
+        ],
+        "description": "hp for each snippet"
+    },
+
+    "jforrange": {
+        "prefix": "jforrange",
+        "body": [
+            "for(size_t i=${1:0}; i<${2:5}; ++i){",
+            "\t$0",
+            "}"
+        ],
+        "description": "hp for range snippet"
+    },
+
     "jheader": {
         "prefix": "jheader",
         "body": [
-            "#ifndef $1",
-            "#define $1",
+            "#ifndef ${TM_FILENAME_BASE}_H",
+            "#define ${TM_FILENAME_BASE}_H",
             "",
             "$0",
             "\n\n\n\n\n\n",
-            "#endif //$1"
+            "#endif //${TM_FILENAME_BASE}_H"
         ],
         "description": "creates header tags"
     },
+    
+    "jinclude": {
+        "prefix": "jinclude",
+        "body": [
+            "#include <${1:vector}>"
+        ],
+        "description": "hp include"
+    },
+
     "jiostream": {
         "prefix": "jiostream",
         "body": [
@@ -25,6 +55,15 @@
         ],
         "description": "inserts #include <iostream>"
     },
+
+    "jmap": {
+        "prefix": "jmap",
+        "body": [
+            "std::map<${1:int}, ${2:int}> $3 = ${4:std::make_pair(${5:5}, ${6:6})};$0"
+        ],
+        "description": "hp std::map snippet"
+    },
+
     "jmath": {
         "prefix": "jmath",
         "body": [
@@ -32,6 +71,7 @@
         ],
         "description": "inserts #include \"math.h\""
     },
+
     "jmpistarter": {
         "prefix": "jmpistarter",
         "body": [
@@ -46,25 +86,76 @@
         ],
         "description": "code snippet for barebone mpi"
     },
+    
+    "jpair": {
+        "prefix": "jpair",
+        "body": [
+            "std::pair<${1:int}, ${2:int}> $3 = ${4:std::make_pair(${5:5}, ${6:6})};$0"
+        ],
+        "description": "hp std::pair snippet"
+    },
+
     "jprint": {
         "prefix": "jprint",
         "body": [
-            "printf(\"$1\\n\"$2);$0"
+            "printf(\"$1\\n\"${2|%c,%d,%e,%f,%i,%o,%s,%u,%x|});$0"
         ],
         "description": "code snippet for printf"
     },
+    
+    "jqueue": {
+        "prefix": "jqueue",
+        "body": [
+            "std::queue<${1:int}> ${2:vec};$0"
+        ],
+        "description": "hp std::queue snippet"
+    },
+    
+    "jrand": {
+        "prefix": "jrand",
+        "body": [
+            "$RANDOM$0"
+        ],
+        "description": "hp snippet temporary"
+    },
+
     "jsamplecpp": {
         "prefix": "jsamplecpp",
         "body": [
             "#include <iostream>",
             "",
             "",
-            "int main(int argc, char const *argv[])",
-            "{",
+            "int main(int argc, char const *argv[]) {",
             "\t$0;",
             "\treturn 0;",
             "}"
         ],
         "description": "creates barebone cpp"
-    }
+    },
+
+    "jstack": {
+        "prefix": "jstack",
+        "body": [
+            "std::stack<${1:int}> ${2:vec};$0"
+        ],
+        "description": "hp std::stack snippet"
+    },
+    
+    "jvec": {
+        "prefix": "jvec",
+        "body": [
+            "std::vector<${1:int}> ${2:vec};$0"
+        ],
+        "description": "hp std::vector snippet"
+    },
+    
+    "jwhile": {
+        "prefix": "jwhile",
+        "body": [
+            "while (${1:CONDITION}){",
+            "\t$0",
+            "}"
+        ],
+        "description": "hp while snippet"
+    },
 }
