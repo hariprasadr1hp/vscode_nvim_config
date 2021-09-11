@@ -1,12 +1,12 @@
 //settings.json
 {
     //###############################################
-    // telemetry   ##################################
+    // TELEMETRY   ##################################
     //###############################################
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     //###############################################
-    // GUI Config   #################################
+    // GUI CONFIG   #################################
     //###############################################
     "editor.fontSize": 16,
     "editor.rulers": [74,],
@@ -15,10 +15,9 @@
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "window.menuBarVisibility": "hidden",
     "zenMode.hideLineNumbers": false,
     //###############################################
-    // workbench ####################################
+    // WORKBENCH ####################################
     //###############################################
     "workbench.colorTheme": "Atom One Dark",
     "workbench.startupEditor": "newUntitledFile",
@@ -28,27 +27,27 @@
     "workbench.sideBar.location": "left",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     //###############################################
-    // terminal   ###################################
+    // TERMINAL   ###################################
     //###############################################
     "terminal.explorerKind": "external",
     "terminal.integrated.inheritEnv": false,
     //###############################################
-    // coding environment   #########################
+    // CODING ENVIRONMENT   #########################
     //###############################################
     "code-runner.clearPreviousOutput": true,
     "code-runner.enableAppInsights": false,
     "code-runner.showExecutionMessage": false,
-    //############### cmake #########################
+    //############### CMAKE #########################
     "cmake.configureOnOpen": false,
-    //############### http ##########################
+    //############### HTTP ##########################
     "http.proxySupport": "off",
-    //############### latex #########################
+    //############### LATEX #########################
     "latex-workshop.view.pdf.viewer": "tab",
-    //################ cpp ##########################
+    //################ CPP ##########################
     "C_Cpp.updateChannel": "Insiders",
-    //################ svg ##########################
+    //################ SVG ##########################
     "svg.preview.mode": "svg",
-    //############### python ########################
+    //############### PYTHON ########################
     "code-runner.executorMap": {
         "python": "$pythonPath -u $fullFileName",
     },
@@ -56,21 +55,22 @@
         "editor.defaultFormatter": "ms-python.python"
     },
     "python.pythonPath": "/home/hari/anaconda3/bin/python",
+    "python.linting.pylintEnabled": true, 
     "python.linting.pylintArgs": [
         "--disable=C0111", //docstrings
         "--disable=C0103", //casing-style
         "--disable=C0326", //onespace after comma
-        
     ],
     //###############################################
-    // neovim   #####################################
+    // NEOVIM   #####################################
     //###############################################
     "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/VSCodium/User/nvim/init.vim",
     //"vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/Code/User/nvim/init.vim",
-    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    //"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "vscode-neovim.neovimExecutablePaths.linux": "/opt/neovim/nvim.appimage",
     "vscode-neovim.textDecorationsAtTop": true,
     //###############################################
-    // magit ########################################
+    // MAGIT ########################################
     //###############################################
     "[magit]": {
         "editor.lineNumbers": "on",
@@ -78,7 +78,13 @@
         "editor.renderWhitespace": "none"
     },
     "editor.semanticHighlighting.enabled": true,
-    "workbench.activityBar.visible": false,
     "workbench.editor.untitled.hint": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.menuBarVisibility": "toggle",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "workbench.activityBar.visible": false,
+    "editor.renderWhitespace": "all",
     //###############################################
 }
