@@ -23,6 +23,33 @@
 		"description": "hp surround type"
 	},
 
+	"jaddarg": {
+		"prefix": "jaddarg",
+		"body": [
+			"parser.add_argument(",
+        	"\t\"-${1:w}\",",
+        	"\t\"--${2:word}\",",
+        	"\ttype=${3:str},",
+        	"\trequired=${4:True},",
+        	"\tmetavar='',",
+        	"\thelp=\"${5:help syntax}\"",
+    		")$0"
+		],
+		"description": "hp snippet for parser.add_argument"
+	},
+	
+	"jargparse": {
+		"prefix": "jargparse",
+		"body": [
+    		"parser = argparse.ArgumentParser(",
+        	"\tdescription=\"${1:a description}\"",
+    		")",
+			"$0",
+   	 		"args = parser.parse_args()"
+		],
+		"description": "hp snippet argparse"
+	},
+
 	"jbsoup":{
 		"prefix": "jbsoup",
 		"body": [
@@ -228,7 +255,7 @@
 		],
 		"description": "hp import pandas"
 	},
-	
+
 	"jprint": {
 		"prefix": "jprint",
 		"body": [

@@ -33,6 +33,74 @@ nnoremap <silent> ]g :call VSCodeNotify('editor.action.marker.next')<CR>
 nnoremap <silent> [e :call VSCodeNotify('editor.action.marker.prev')<CR>
 nnoremap <silent> ]e :call VSCodeNotify('editor.action.marker.next')<CR>
 
+" folds
+nnoremap <silent> za :call VSCodeNotify('editor.toggleFold')<CR>
+nnoremap <silent> zc :call VSCodeNotify('editor.fold')<CR>
+nnoremap <silent> zm :call VSCodeNotify('editor.foldAll')<CR>
+nnoremap <silent> zo :call VSCodeNotify('editor.unfold')<CR>
+nnoremap <silent> zr :call VSCodeNotify('editor.unfoldAll')<CR>
+nnoremap <silent> zM :call VSCodeNotify('editor.foldAll')<CR>
+nnoremap <silent> zR :call VSCodeNotify('editor.unfoldAll')<CR>
+
+" c for {} curly-braces
+nnoremap cac ca{
+nnoremap cic ci{
+nnoremap dac da{
+nnoremap dic di{
+nnoremap vac va{
+nnoremap vic vi{
+nnoremap yac ya{
+nnoremap yic yi{
+
+" B for [] brackets
+nnoremap caB ca[
+nnoremap ciB ci[
+nnoremap daB da[
+nnoremap diB di[
+nnoremap vaB va[
+nnoremap viB vi[
+nnoremap yaB ya[
+nnoremap yiB yi[
+
+" d for double quotes
+nnoremap cad ca"
+nnoremap cid ci"
+nnoremap dad da"
+nnoremap did di"
+nnoremap vad va"
+nnoremap vid vi"
+nnoremap yad ya"
+nnoremap yid yi"
+
+" q for single quotes
+nnoremap caq ca'
+nnoremap ciq ci'
+nnoremap daq da'
+nnoremap diq di'
+nnoremap vaq va'
+nnoremap viq vi'
+nnoremap yaq ya'
+nnoremap yiq yi'
+
+" Q for double quotes
+nnoremap caQ ca"
+nnoremap ciQ ci"
+nnoremap daQ da"
+nnoremap diQ di"
+nnoremap vaQ va"
+nnoremap viQ vi"
+nnoremap yaQ ya"
+nnoremap yiQ yi"
+
+" x for backticks
+nnoremap cax ca`
+nnoremap cix ci`
+nnoremap dax da`
+nnoremap dix di`
+nnoremap vax va`
+nnoremap vix vi`
+nnoremap yax ya`
+nnoremap yix yi`
 
 " miscellaneous
 nnoremap <silent> <Space>[( msF[mh%r)`hr(`s
@@ -203,8 +271,6 @@ nnoremap <silent> <Space>qr :call VSCodeNotify('workbench.action.reloadWindow')<
 
 
 " +search
-nnoremap <silent> <Space>sff :call VSCodeNotify('fzf-quick-open.runFzfFilePwd')<CR>
-nnoremap <silent> <Space>sfs :call VSCodeNotify('fzf-quick-open.runFzfSearchPwd')<CR>
 nnoremap <silent> <Space>sw  :call VSCodeNotify('search.action.openNewEditorToSide')<CR>
 nnoremap <silent> <Space>ss  :%s/\v
 vnoremap <silent> <Space>ss  :s/\v
