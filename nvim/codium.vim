@@ -212,16 +212,21 @@ nnoremap <silent> <Space>hs :call VSCodeNotify('workbench.action.openGlobalSetti
 nnoremap <silent> <Space>ht :call VSCodeNotify('workbench.action.selectTheme')<CR>
 
 
-" +insert
-nnoremap <silent> <Space>ic :r !<right>  
-nnoremap <silent> <Space>id :r ! date<CR>
+" +info
+nnoremap <silent> <Space>ib :! battery<CR>  
+nnoremap <silent> <Space>ic :! clock<CR>  
+nnoremap <silent> <Space>id :! date<CR>
 nnoremap <silent> <Space>if :r %f<CR>
+nnoremap <silent> <Space>il :! pwd; ls -la<CR>
 nnoremap <silent> <Space>im i$$<CR><CR>$$<Esc>ki
+nnoremap <silent> <Space>it :! clock<CR>  
+nnoremap <silent> <Space>iu :! upt<CR>
+nnoremap <silent> <Space>iv :! volume<CR>
 
 
 " +lsp
 nnoremap <silent> <Space>lr :call VSCodeNotify('editor.action.rename')<CR>
-nnoremap <silent> <Space>lo :call VSCodeNotify('editor.action.revealDefinition')<CR>
+nnoremap <silent> <Space>lp :call VSCodeNotify('editor.action.revealDefinition')<CR>
 
 
 " +latex(m)
@@ -266,7 +271,8 @@ nnoremap <silent> <Space>qa :call VSCodeNotify('workbench.action.closeAllEditors
 nnoremap <silent> <Space>qr :call VSCodeNotify('workbench.action.reloadWindow')<CR>
 
 
-" +register
+" +register/reload
+nnoremap <silent> <Space>rr :call VSCodeNotify('workbench.action.reloadWindow')<CR>
 
 
 
@@ -278,11 +284,13 @@ vnoremap <silent> <Space>ss  :s/\v
 
 " +toggle
 nnoremap <silent> <Space>tF :call VSCodeNotify('workbench.action.toggleFullScreen')<CR>
-nnoremap <silent> <Space>th :call VSCodeNotify('C_Cpp.SwitchHeaderSource')<CR>
+nnoremap <silent> <Space>tG :%norm! g??<CR>
+nnoremap <silent> <Space>th :set hls!<CR>
 nnoremap <silent> <Space>tm :call VSCodeNotify('workbench.action.toggleMenuBar')<CR>
-nnoremap <silent> <Space>to :call VSCodeNotify('workbench.action.output.toggleOutput')<CR>
+nnoremap <silent> <Space>to :call VSCodeNotify('C_Cpp.SwitchHeaderSource')<CR>
 nnoremap <silent> <Space>tp :call VSCodeNotify('workbench.actions.view.toggleProblems')<CR>
-nnoremap <silent> <Space>tw :call VSCodeNotify('workbench.action.toggleEditorGroupLayout')<CR>
+nnoremap <silent> <Space>tl :call VSCodeNotify('workbench.action.toggleEditorGroupLayout')<CR>
+nnoremap <silent> <Space>tw :call VSCodeNotify('workbench.action.toggleWordWrap')<CR>
 
 
 " +window

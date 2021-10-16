@@ -5,7 +5,6 @@
 if exists('g:vscode')
   source $HOME/.config/VSCodium/User/nvim/codium.vim
   source $HOME/.config/VSCodium/User/nvim/temp.vim
-  source $HOME/.config/VSCodium/User/nvim/codium.lua
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
