@@ -64,8 +64,8 @@
     //###############################################
     // NEOVIM   #####################################
     //###############################################
-    "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/VSCodium/User/nvim/init.vim",
-    //"vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/Code/User/nvim/init.vim",
+    //"vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/VSCodium/User/nvim/init.vim",
+    "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/Code/User/nvim/init.vim",
     //"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
     "vscode-neovim.neovimExecutablePaths.linux": "/opt/neovim/nvim.appimage",
     "vscode-neovim.textDecorationsAtTop": true,
@@ -86,5 +86,10 @@
     },
     "workbench.activityBar.visible": false,
     "editor.renderWhitespace": "all",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
     //###############################################
 }
