@@ -1,5 +1,5 @@
-" VSCodium settings
-" $HOME/.config/VSCodium/User/nvim/codium.vim
+" VSCode settings
+" $HOME/.config/VSCode/User/nvim/codium.vim
 
 
 " Better indenting
@@ -161,11 +161,10 @@ nnoremap <silent> <Space>ee : !<right>
 nnoremap <silent> <Space>el :call VSCodeNotify('code-runner.run')<CR>
 nnoremap <silent> <Space>ep :call VSCodeNotify('code-runner.run')<CR>
 nnoremap <silent> <Space>eq :call VSCodeNotify('code-runner.stop')<CR>
-nnoremap <silent> <Space>ev :vs $HOME/.config/VSCodium/User/nvim/codium.vim<CR>
 
 
 " +file
-nnoremap <silent> <Space>fp :vs $HOME/.config/VSCodium/User/nvim/codium.vim<CR>
+nnoremap <silent> <Space>fp :vs $HOME/.config/Code/User/nvim/codium.vim<CR>
 nnoremap <silent> <Space>fs :call VSCodeNotify('workbench.action.files.save')<CR>
 nnoremap <silent> <Space>fz :call VSCodeNotify('workbench.action.toggleZenMode')<CR>
 
