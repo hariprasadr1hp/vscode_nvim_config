@@ -24,6 +24,8 @@ nnoremap ,ps yiwoself.<C-r>" = <C-r>"<C-[>
 " single-key mapping
 nnoremap <silent> <Space>x  :call VSCodeNotify('workbench.action.showCommands')<CR>
 nnoremap <silent> <Space>.  :call VSCodeNotify('breadcrumbs.focusAndSelect')<CR>
+nnoremap <silent> <Space>/  :.py3do return line[2:] if line.startswith("# ") else "# {}".format(line)<CR>
+vnoremap <silent> <Space>/  :py3do return line[2:] if line.startswith("# ") else "# {}".format(line)<CR>
 
 " error hopping
 nnoremap <silent> [g :call VSCodeNotify('editor.action.marker.prev')<CR>
@@ -156,6 +158,8 @@ nnoremap <silent> <Space>du :call VSCodeNotify('extension.dired.unselect')<CR>
 " +evaluate/edit
 nnoremap <silent> <Space>ec :call VSCodeNotify('code-runner.run')<CR>
 nnoremap <silent> <Space>ee : !<right>  
+nnoremap <silent> <Space>el :call VSCodeNotify('code-runner.run')<CR>
+nnoremap <silent> <Space>ep :call VSCodeNotify('code-runner.run')<CR>
 nnoremap <silent> <Space>eq :call VSCodeNotify('code-runner.stop')<CR>
 nnoremap <silent> <Space>ev :vs $HOME/.config/VSCodium/User/nvim/codium.vim<CR>
 
