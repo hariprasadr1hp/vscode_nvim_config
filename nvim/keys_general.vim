@@ -24,8 +24,7 @@ nnoremap ,ps yiwoself.<C-r>" = <C-r>"<C-[>
 " single-key mapping
 nnoremap <silent> <Space>x  :call VSCodeNotify('workbench.action.showCommands')<CR>
 nnoremap <silent> <Space>.  :call VSCodeNotify('breadcrumbs.focusAndSelect')<CR>
-nnoremap <silent> <Space>/  :.py3do return line[2:] if line.startswith("# ") else "# {}".format(line)<CR>
-vnoremap <silent> <Space>/  :py3do return line[2:] if line.startswith("# ") else "# {}".format(line)<CR>
+nnoremap <silent> <Space>/ :call VSCodeNotify('editor.action.commentLine')<CR>
 
 " error hopping
 nnoremap <silent> [g :call VSCodeNotify('editor.action.marker.prev')<CR>
@@ -233,16 +232,20 @@ nnoremap <silent> <Space>lr :call VSCodeNotify('editor.action.rename')<CR>
 nnoremap <silent> <Space>lp :call VSCodeNotify('editor.action.revealDefinition')<CR>
 
 
-" +latex(m)
-nnoremap <silent> <Space>mb :call VSCodeNotify('latex-workshop.build')<CR>
-nnoremap <silent> <Space>mc :call VSCodeNotify('latex-workshop.clean')<CR>
-nnoremap <silent> <Space>mv :call VSCodeNotify('latex-workshop.view')<CR>
-vnoremap <silent> <Space>mlb di\textbf{}<Esc>hp
-vnoremap <silent> <Space>mli di\emph{}<Esc>hp
-vnoremap <silent> <Space>mlm di$$<Esc>hp
-nnoremap <silent> <Space>mlM i$$<CR><CR>$$<Esc>ki
-vnoremap <silent> <Space>mlt di\texttt{}<Esc>hp
-vnoremap <silent> <Space>mlu di\underline{}<Esc>hp
+" +latex(L)
+nnoremap <silent> <Space>Lb :call VSCodeNotify('latex-workshop.build')<CR>
+nnoremap <silent> <Space>Lc :call VSCodeNotify('latex-workshop.clean')<CR>
+nnoremap <silent> <Space>Lv :call VSCodeNotify('latex-workshop.view')<CR>
+vnoremap <silent> <Space>Llb di\textbf{}<Esc>hp
+vnoremap <silent> <Space>Lli di\emph{}<Esc>hp
+vnoremap <silent> <Space>Llm di$$<Esc>hp
+nnoremap <silent> <Space>LlM i$$<CR><CR>$$<Esc>ki
+vnoremap <silent> <Space>Llt di\texttt{}<Esc>hp
+vnoremap <silent> <Space>Llu di\underline{}<Esc>hp
+
+" make
+nnoremap <silent> <Space>mm :call VSCodeNotify('workbench.action.tasks.runTask')<CR>
+nnoremap <silent> <Space>mr :call VSCodeNotify('workbench.action.tasks.reRunTask')<CR>
 
 
 " +open
