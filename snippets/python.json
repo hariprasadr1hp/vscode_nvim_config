@@ -264,6 +264,20 @@
 		"description": "hp snippet for print"
 	},
 	
+	"jprop": {
+		"prefix": "jprop",
+		"body": [
+			"@property",
+			"def ${1:NAME}(self) -> ${2:float}:",
+			"\treturn self._${1}",
+			"",
+			"@${1}.setter",
+			"def ${1:NAME}(self, value) -> None:",
+			"\tself._${1} = value",
+		],
+		"description": "hp snippet for property"
+	},
+	
 	"jreduce":{
 		"prefix": "jreduce",
 		"body": [

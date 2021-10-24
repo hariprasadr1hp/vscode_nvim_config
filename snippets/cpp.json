@@ -17,6 +17,16 @@
         "description": "hp for each snippet"
     },
 
+    "jforiter": {
+        "prefix": "jforiter",
+        "body": [
+            "for(auto ${1:itr}=${2:vec}.begin(); ${1:itr}!=${2:vec}.end(); ++${1:itr}){",
+            "\t$0",
+            "}"
+        ],
+        "description": "hp for iterator snippet"
+    },
+
     "jforrange": {
         "prefix": "jforrange",
         "body": [
@@ -133,6 +143,26 @@
         "description": "creates barebone cpp"
     },
 
+    "jsnprintf": {
+        "prefix": "jspnrintf",
+        "body": [
+            "char ${1:txt}[100];",
+            "sprintf(${1:txt}, sizeof(${1:txt}), \"${2:TEXT %d GOES HERE}\", 5);",
+            "err = system(${1:txt});"
+        ],
+        "description": "hp snprintf snippet"
+    },
+    
+    "jsprintf": {
+        "prefix": "jsprintf",
+        "body": [
+            "char ${1:err}[100];",
+            "sprintf(${1:err}, \"${2:TEXT %d GOES HERE}\", 5);",
+            "std::cout << ${1:err} << std::endl;"
+        ],
+        "description": "hp sprintf snippet"
+    },
+    
     "jstack": {
         "prefix": "jstack",
         "body": [
