@@ -256,6 +256,15 @@
 		"description": "hp import pandas"
 	},
 
+	"jpostinit": {
+		"prefix": "jpostinit",
+		"body": [
+			"def __post_init__(self, ${1}) -> None:",
+			"\t$0"
+		],
+		"description": "hp snippet for __post_init__"
+	},
+	
 	"jprint": {
 		"prefix": "jprint",
 		"body": [
@@ -306,7 +315,7 @@
 	"jstr": {
 		"prefix": "jstr",
 		"body": [
-			"def __str__(self):",
+			"def __str__(self) -> str:",
 			"\t$0"
 		],
 		"description": "hp snippet for __str__"
