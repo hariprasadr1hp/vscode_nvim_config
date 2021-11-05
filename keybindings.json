@@ -311,4 +311,20 @@
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
     },
+    {
+        "key": "ctrl+shift+; a",
+        "command": "testing.debugAll"
+    },
+    {
+        "key": "ctrl+; ctrl+a",
+        "command": "-testing.debugAll"
+    },
+    {
+        "key": "ctrl+; ctrl+a",
+        "command": "testing.runAll"
+    },
+    {
+        "key": "ctrl+; a",
+        "command": "-testing.runAll"
+    },
 ]
