@@ -1,5 +1,5 @@
 " VSCode settings
-" $HOME/.config/VSCode/User/nvim/keys_general.vim
+" $HOME/Library/Application Support/Code/User/nvim/nvim/keys_general.vim
 
 
 " Better indenting
@@ -141,19 +141,6 @@ nnoremap <silent> <Space>c[ :call VSCodeNotify('editor.action.marker.previousInF
 nnoremap <silent> <Space>c] :call VSCodeNotify('editor.action.marker.nextInFiles')<CR>
 
 
-" +dired
-nnoremap <silent> <Space>db :call VSCodeNotify('extension.dired.goUpDir')<CR>
-nnoremap <silent> <Space>dc :call VSCodeNotify('extension.dired.copy')<CR>
-nnoremap <silent> <Space>dC :call VSCodeNotify('extension.dired.createDir')<CR>
-nnoremap <silent> <Space>dd :call VSCodeNotify('extension.dired.open')<CR>
-nnoremap <silent> <Space>de :call VSCodeNotify('extension.dired.enter')<CR>
-nnoremap <silent> <Space>dq :call VSCodeNotify('extension.dired.close')<CR>
-nnoremap <silent> <Space>dr :call VSCodeNotify('extension.dired.refresh')<CR>
-nnoremap <silent> <Space>dR :call VSCodeNotify('extension.dired.rename')<CR>
-nnoremap <silent> <Space>ds :call VSCodeNotify('extension.dired.select')<CR>
-nnoremap <silent> <Space>du :call VSCodeNotify('extension.dired.unselect')<CR>
-
-
 " +evaluate/edit
 nnoremap <silent> <Space>ec :call VSCodeNotify('code-runner.run')<CR>
 nnoremap <silent> <Space>ee : !<right>  
@@ -163,9 +150,9 @@ nnoremap <silent> <Space>eq :call VSCodeNotify('code-runner.stop')<CR>
 
 
 " +file
-nnoremap <silent> <Space>fp :vs /home/hari/.config/Code/User/nvim/keys_general.vim<CR>
+nnoremap <silent> <Space>fp :vs $HOME/Library/Application Support/Code/User/nvim/keys_general.vim<CR>
 nnoremap <silent> <Space>fs :call VSCodeNotify('workbench.action.files.save')<CR>
-nnoremap <silent> <Space>ft :vs /home/hari/.config/Code/User/nvim/temp.vim<CR>
+nnoremap <silent> <Space>ft :vs $HOME/Library/Application Support/Code/User/nvim/temp.vim<CR>
 nnoremap <silent> <Space>fz :call VSCodeNotify('workbench.action.toggleZenMode')<CR>
 
 
@@ -249,7 +236,12 @@ nnoremap <silent> <Space>mr :call VSCodeNotify('workbench.action.tasks.reRunTask
 
 
 " +open
+nnoremap <silent> <Space>oe :call VSCodeNotify('workbench.view.explorer')<CR>
+nnoremap <silent> <Space>of :call VSCodeNotify('workbench.view.search')<CR>
+nnoremap <silent> <Space>ol :call VSCodeNotify('workbench.view.scm')<CR>
+nnoremap <silent> <Space>os :call VSCodeNotify('workbench.action.gotoSymbol')<CR>
 nnoremap <silent> <Space>ot :call VSCodeNotify('workbench.action.terminal.toggleTerminal')<CR>
+nnoremap <silent> <Space>ox :call VSCodeNotify('workbench.view.extensions')<CR>
 
 
 " +project
