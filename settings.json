@@ -9,17 +9,14 @@
     // GUI CONFIG   #################################
     //###############################################
     "editor.fontSize": 16,
-    "editor.rulers": [74,],
-    "window.zoomLevel": 1,
+    "editor.rulers": [
+        74,
+    ],
     "editor.cursorBlinking": "solid",
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "zenMode.hideLineNumbers": false,
-    //###############################################
-    // WORKBENCH ####################################
-    //###############################################
-    "workbench.colorTheme": "Atom One Dark",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
@@ -54,7 +51,7 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },
-    "python.pythonPath": "/home/hari/anaconda3/bin/python",
+    "python.pythonPath": "/Users/hari/opt/anaconda3/bin/python",
     "python.linting.pylintEnabled": true, 
     "python.linting.pylintArgs": [
         "--disable=C0111", //docstrings
@@ -64,10 +61,10 @@
     //###############################################
     // NEOVIM   #####################################
     //###############################################
-    //"vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/VSCodium/User/nvim/init.vim",
-    "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/Code/User/nvim/init.vim",
+    //"vscode-neovim.neovimInitVimPaths.linux": "/Users/hari/Library/Application Support/Code/User/nvim/init.vim",
+    "vscode-neovim.neovimInitVimPaths.darwin": "/Users/hari/Library/Application Support/Code/User/nvim/init.vim",
     //"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-    "vscode-neovim.neovimExecutablePaths.linux": "/opt/neovim/nvim.appimage",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
     "vscode-neovim.textDecorationsAtTop": true,
     //###############################################
     // MAGIT ########################################
@@ -84,12 +81,27 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
-    "workbench.activityBar.visible": false,
     "editor.renderWhitespace": "all",
     "editor.quickSuggestions": {
         "other": true,
         "comments": true,
         "strings": true
     },
+    "yaml.schemas": {
+        "file:///Users/hari/.vscode/extensions/atlassian.atlascode-2.10.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "redhat.telemetry.enabled": false,
+    "atlascode.jira.jqlList": [
+        {
+            "id": "b56d5c13-cb0a-4ea6-a746-2cb2d109a999",
+            "enabled": true,
+            "name": "My smart-iot Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "df55fa9e-e53d-414c-87e6-7752f362fa31",
+            "monitor": true
+        }
+    ],
+    "workbench.colorTheme": "GitHub Dark Default",
+    "gitlens.mode.active": "zen",
     //###############################################
 }

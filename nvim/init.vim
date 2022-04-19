@@ -3,8 +3,8 @@
 
 " if vscode
 if exists('g:vscode')
-  source $HOME/.config/Code/User/nvim/keys_general.vim
-  source $HOME/.config/Code/User/nvim/temp.vim
+  source $HOME/Library/Application\ Support/Code/User/nvim/keys_general.vim
+  source $HOME/Library/Application\ Support/Code/User/nvim/temp.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
