@@ -24,7 +24,8 @@ nnoremap ,ps yiwoself.<C-r>" = <C-r>"<C-[>
 " single-key mapping
 nnoremap <silent> <Space>x  :call VSCodeNotify('workbench.action.showCommands')<CR>
 nnoremap <silent> <Space>.  :call VSCodeNotify('breadcrumbs.focusAndSelect')<CR>
-nnoremap <silent> <Space>/ :call VSCodeNotify('editor.action.commentLine')<CR>
+nnoremap <silent> <Space>/ :call ToggleCommentLine()<CR>
+vnoremap <silent> <Space>/ :call ToggleCommentLine()<CR>
 
 " error hopping
 nnoremap <silent> [g :call VSCodeNotify('editor.action.marker.prev')<CR>
