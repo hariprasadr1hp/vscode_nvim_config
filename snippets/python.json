@@ -304,6 +304,18 @@
 		"description": "hp snippet for __repr__"
 	},
 	
+	"jselenium": {
+		"prefix": "jsel",
+		"body": [
+			"from selenium import webdriver",
+			"from selenium.webdriver.common.keys import Keys",
+			"from selenium.webdriver.common.by import By",
+			"from selenium.webdriver.support import expected_conditions as EC",
+			"from selenium.webdriver.support.wait import SupportWait"
+		],
+		"description": "hp snippet for selenium"
+	},
+	
 	"jsns": {
 		"prefix": "jsns",
 		"body": [
