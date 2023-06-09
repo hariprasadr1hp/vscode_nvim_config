@@ -128,7 +128,7 @@
 			"@app.route('/')",
 			"def index():",
     		"\treturn \"Hello, World\"",
-			"",
+			"\n",
 			"if __name__ == \"__main__\":",
 			"\tapp.run(debug=True)"			
 		],
@@ -159,7 +159,7 @@
 	"jjsonRead": {
 		"prefix": "jjsonRead",
 		"body": [
-			"with open('${1:FILENAME}.json', 'r') as rf:",
+			"with open(file='${1:FILENAME}.json', mode='r', encoding='utf-8') as rf:",
   			"\t${2:VARIABLE} = json.load(rf)",
 			"$0"
 		],
@@ -169,7 +169,7 @@
 	"jjsonWrite": {
 		"prefix": "jjsonWrite",
 		"body": [
-			"with open('${1:FILENAME}.json', 'w') as wf:",
+			"with open(file='${1:FILENAME}.json', mode='w', encoding='utf-8') as wf:",
 			"\tjson.dump(${2:CONTENTS}, wf, indent=4, sort_keys=False)",
 			"$0"
 		],
@@ -206,9 +206,9 @@
 	"jmain": {
 		"prefix": "jmain",
 		"body": [
-			"def main():",
+			"def main() -> None:",
 			"\t$0",
-			"",
+			"\t...\n\n",
 			"if __name__ == \"__main__\":",
 			"\tmain()"
 		],
@@ -392,7 +392,7 @@
 	"jyamlRead": {
 		"prefix": "jyamlRead",
 		"body": [
-			"with open('${1:FILENAME}.yml', 'r') as rf:",
+			"with open(file='${1:FILENAME}.yml', mode='r', encoding='utf-8') as rf:",
 			"\t${2:VARIABLE} = yaml.load(rf, yaml.FullLoader)",
 			"$0"
 		],
@@ -402,7 +402,7 @@
 	"jyamlWrite": {
 		"prefix": "jyamlWrite",
 		"body": [
-			"with open('${1:FILENAME}.yml', 'w') as wf:",
+			"with open(file='${1:FILENAME}.yml', mode='w', encoding='utf-8') as wf:",
 			"\tyaml.dump(${2:CONTENTS}, wf)",
 			"$0"
 		],
