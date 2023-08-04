@@ -1,28 +1,4 @@
 {
-	"jtemp": {
-		"prefix": "jtemp",
-		"body": [
-			"print($TM_SELECTED_TEXT)",
-		],
-		"description": "jhkjhjhkjk"
-	},
-
-	"jp": {
-		"prefix": "jp",
-		"body": [
-			"print($TM_SELECTED_TEXT)",
-		],
-		"description": "hp surround print"
-	},
-
-	"jt": {
-		"prefix": "jt",
-		"body": [
-			"type($TM_SELECTED_TEXT)",
-		],
-		"description": "hp surround type"
-	},
-
 	"jaddarg": {
 		"prefix": "jaddarg",
 		"body": [
@@ -50,6 +26,15 @@
 		"description": "hp snippet argparse"
 	},
 
+	"jbasemodelpydantic": {
+		"prefix": "jbasemodelpydantic",
+		"body": [
+			"class ${1:CLASS_NAME}(pydantic.BaseModel):",
+			"\t${0:STATEMENT}",
+		],
+		"description": "hp snippet for inheriting `pydantic.BaseModel`"
+	},
+	
 	"jbsoup":{
 		"prefix": "jbsoup",
 		"body": [
@@ -95,13 +80,13 @@
 		"description": "decorator for currying"
 	},
 	
-	"jforeach": {
-		"prefix": "jforeach",
+	"jenum": {
+		"prefix": "jenum",
 		"body": [
-			"for ${1:EACH} in ${2:CONTAINER}:",
-			"\t${3:STATEMENT}$0"
+			"class ${1:CLASS_NAME}(str, enum.Enum):",
+			"\t${0:STATEMENT}"
 		],
-		"description": "hp for each loop"
+		"description": "hp snippet for enum class"
 	},
 
 	"jhdf5Read": {
@@ -118,6 +103,14 @@
 		"description": "hp read a HDF5 file"
 	},
 
+	"jfieldpydantic": {
+		"prefix": "jfieldpydantic",
+		"body": [
+			"pydantic.Field(description=\"${0:DESCRIPTION}\")",
+		],
+		"description": "hp snippet for filling `pydantic.Field`"
+	},
+	
 	"jflask": {
 		"prefix": "jflask",
 		"body": [
@@ -176,14 +169,6 @@
 		"description": "hp write a JSON file"
 	},
 
-	"jlam": {
-		"prefix": "jlam",
-		"body": [
-			"lambda ${1:VARIABLE}: $0"
-		],
-		"description": "hp lambda snippet"
-	},
-
 	"jlineplot":{
 		"prefix": "jlineplot",
 		"body": [
@@ -213,14 +198,6 @@
 			"\tmain()"
 		],
 		"description": "hp snippet for main"
-	},
-	
-	"jmap":{
-		"prefix": "jmap",
-		"body": [
-			"map(${1:FUNCTION}, ${2:CONTAINER})$0"
-		],
-		"description": "hp snippet for map"
 	},
 	
 	"jmat": {
@@ -287,14 +264,6 @@
 		"description": "hp snippet for property"
 	},
 	
-	"jreduce":{
-		"prefix": "jreduce",
-		"body": [
-			"reduce(lambda x, y: ${1:FUNCTION}, ${2:CONTAINER})$0"
-		],
-		"description": "hp snippet for reduce"
-	},
-	
 	"jrepr": {
 		"prefix": "jrepr",
 		"body": [
@@ -304,7 +273,7 @@
 		"description": "hp snippet for __repr__"
 	},
 	
-	"jselenium": {
+	"jsel": {
 		"prefix": "jsel",
 		"body": [
 			"from selenium import webdriver",
@@ -328,7 +297,7 @@
 		"prefix": "jstr",
 		"body": [
 			"def __str__(self) -> str:",
-			"\t$0"
+			"\treturn $0"
 		],
 		"description": "hp snippet for __str__"
 	},
