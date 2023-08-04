@@ -104,6 +104,16 @@ nnoremap vix vi`
 nnoremap yax ya`
 nnoremap yix yi`
 
+" t for tags
+nnoremap cat ca<
+nnoremap cit ci<
+nnoremap dat da<
+nnoremap dit di<
+nnoremap vat va<
+nnoremap vit vi<
+nnoremap yat ya<
+nnoremap yit yi<
+
 " miscellaneous
 nnoremap <silent> <Space>[( msF[mh%r)`hr(`s
 nnoremap <silent> <Space>[) msF[mh%r)`hr(`s
