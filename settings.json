@@ -51,7 +51,6 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },
-    "python.pythonPath": "/Users/hari/opt/anaconda3/bin/python",
     "python.linting.pylintEnabled": true, 
     "python.linting.pylintArgs": [
         "--disable=C0111", //docstrings
