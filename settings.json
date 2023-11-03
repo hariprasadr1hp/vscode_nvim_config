@@ -82,7 +82,21 @@
         "file:///Users/hari/.vscode/extensions/atlassian.atlascode-2.10.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "redhat.telemetry.enabled": false,
-    "workbench.colorTheme": "GitHub Dark Default",
-    "gitlens.mode.active": "zen",
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "window.commandCenter": true,
+    "vs-kubernetes": {
+        "vscode-kubernetes.minikube-path.mac": "/Users/hari/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+        "vscode-kubernetes.helm-path.mac": "/Users/hari/.vs-kubernetes/tools/helm/darwin-arm64/helm"
+    },
+    "[json]": {
+        // "editor.defaultFormatter": "denoland.vscode-deno",
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
     //###############################################
 }
