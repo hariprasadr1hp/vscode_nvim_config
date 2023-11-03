@@ -50,14 +50,8 @@
         "python": "$pythonPath -u $fullFileName",
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "ms-python.pylint"
     },
-    "python.linting.pylintEnabled": true, 
-    "python.linting.pylintArgs": [
-        "--disable=C0111", //docstrings
-        "--disable=C0103", //casing-style
-        "--disable=C0326", //onespace after comma
-    ],
     //############### JUPYTER #######################
     "notebook.output.textLineLimit": 100
     //###############################################
