@@ -59,6 +59,10 @@
     "vscode-neovim.neovimInitVimPaths.darwin": "/Users/hari/Library/Application Support/Code/User/nvim/init.vim",
     //"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
     "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.logOutputToConsole": true,
     //###############################################
     // MAGIT ########################################
     //###############################################
