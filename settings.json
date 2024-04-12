@@ -14,10 +14,16 @@
     ],
     "editor.accessibilitySupport": "off",
     "editor.cursorBlinking": "solid",
+    "editor.inlayHints.enabled":"off",
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
+    "editor.stickyScroll.enabled": false,
     "zenMode.hideLineNumbers": false,
+    "zenMode.fullScreen": false,
+    "zenMode.silentNotifications": false,
+    "zenMode.hideStatusBar": true,
+    "zenMode.showTabs": "none",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
@@ -36,22 +42,42 @@
     "code-runner.enableAppInsights": false,
     "code-runner.showExecutionMessage": false,
     //############### CMAKE #########################
+    //################ CPP ##########################
+    "[cpp]": {
+        "editor.tabSize": 4,
+        "editor.wordBasedSuggestions": false,
+    },
+    //############### HTML ########################
+    "[html]": {
+        "editor.tabSize": 2,
+    },
     //############### HTTP ##########################
     "http.proxySupport": "off",
+    //############### JUPYTER #######################
+    "notebook.output.textLineLimit": 100
     //############### LATEX #########################
     "latex-workshop.view.pdf.viewer": "tab",
-    //################ CPP ##########################
-    //################ SVG ##########################
-    "svg.preview.mode": "svg",
     //############### PYTHON ########################
     "code-runner.executorMap": {
         "python": "$pythonPath -u $fullFileName",
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.pylint"
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.tabSize": 4,
+        "editor.wordBasedSuggestions": false,
     },
-    //############### JUPYTER #######################
-    "notebook.output.textLineLimit": 100
+    //############### RUST ##########################
+    // "rust-analyzer.check.command": "check",
+    "[rust]": {
+        "editor.tabSize": 4,
+        "editor.wordBasedSuggestions": false,
+    },
+    //############### SQL ########################
+    "[sql]": {
+        "editor.tabSize": 2,
+    },
+    //################ SVG ##########################
+    "svg.preview.mode": "svg",
     //###############################################
     // NEOVIM   #####################################
     //###############################################
@@ -94,7 +120,8 @@
     },
     "[json]": {
         // "editor.defaultFormatter": "denoland.vscode-deno",
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.tabSize": 2,
     },
     "[javascript]": {
         "editor.defaultFormatter": "denoland.vscode-deno"
