@@ -128,6 +128,27 @@
 		"description": "hp flask snippet"
 	},
 
+	"jllamachat": {
+		"prefix": "jllamachat",
+		"body": [
+			"def get_gpt_summary(content: str, model: str, host: str | None = None) -> str:",
+			"\tif not host:",
+			"\t\thost = \"http://localhost:11434\"",
+			"\tclient = ollama.Client(host=host)",
+			"\tmessages = [",
+			"\t\tollama.Message(",
+			"\t\t\trole=\"system\",",
+			"\t\t\tcontent=\"summarize the text, into bullet points, only return the summary\",",
+			"\t\t),",
+			"\t\tollama.Message(role=\"user\", content=content),",
+			"\t]",
+			"\tresponse = client.chat(model=model, messages=messages, stream=False)",
+			"\treturn response[\"message\"][\"content\"]",
+		],
+		"description": "hp ollama snippet"
+	},
+
+
 	"jhdf5Write": {
 		"prefix": "jhdf5Write",
 		"body": [

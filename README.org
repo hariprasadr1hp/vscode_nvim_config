@@ -1,4 +1,4 @@
-#+TITLE: vscode-spacemacsy
+#+TITLE: vscode-nvim-config
 #+AUTHOR: hariprasadr1hp
 
 ** Setup (Linux)
@@ -17,7 +17,7 @@ sudo apt install neovim
 Clone this repository to the default Codium config folder
 #+BEGIN_SRC bash
 cd ~/.config/VSCodium/User || cd ~/.config/Code/User
-git clone https://hariprasadr1hp/vscode-spacemacsy
+git clone https://hariprasadr1hp/vscode_nvim_config
 #+END_SRC
 
 *** Install Extensions
@@ -33,4 +33,3 @@ cd ~/.config/Code/User && cat extensions.txt | xargs -n 1 r !code --list-extensi
 #+BEGIN_SRC bash
 cd ~/.config/VSCodium/User && cat extensions.txt | xargs -n 1 r !codium --list-extensions --show-versions
 #+END_SRC
-
