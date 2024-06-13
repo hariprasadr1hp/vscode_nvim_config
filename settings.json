@@ -3,8 +3,16 @@
     //###############################################
     // TELEMETRY   ##################################
     //###############################################
+    "code-runner.enableAppInsights": false,
+    "gitlens.telemetry.enabled": false,
+    "redhat.telemetry.enabled": null,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
+    //###############################################
+    // SECURITY   ###################################
+    //###############################################
+    "security.workspace.trust.untrustedFiles": "open",
     //###############################################
     // GUI CONFIG   #################################
     //###############################################
@@ -14,26 +22,31 @@
     ],
     "editor.accessibilitySupport": "off",
     "editor.cursorBlinking": "solid",
-    "editor.inlayHints.enabled":"off",
+    "editor.inlayHints.enabled": "off",
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
+    "editor.semanticHighlighting.enabled": true,
     "editor.stickyScroll.enabled": false,
-    "zenMode.hideLineNumbers": false,
-    "zenMode.fullScreen": false,
-    "zenMode.silentNotifications": false,
-    "zenMode.hideStatusBar": true,
-    "zenMode.showTabs": "none",
-    "workbench.startupEditor": "newUntitledFile",
+    "window.commandCenter": "never",
+    "window.customTitleBarVisibility": "never",
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
     "workbench.sideBar.location": "left",
-    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": true,
+    "zenMode.showTabs": "none",
+    "zenMode.silentNotifications": false,
     //###############################################
     // TERMINAL   ###################################
     //###############################################
     "terminal.explorerKind": "external",
+    "terminal.integrated.fontSize": 16,
     "terminal.integrated.inheritEnv": false,
     //###############################################
     // CODING ENVIRONMENT   #########################
@@ -45,7 +58,7 @@
     //################ CPP ##########################
     "[cpp]": {
         "editor.tabSize": 4,
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions": "off",
     },
     //############### HTML ########################
     "[html]": {
@@ -54,7 +67,9 @@
     //############### HTTP ##########################
     "http.proxySupport": "off",
     //############### JUPYTER #######################
-    "notebook.output.textLineLimit": 100
+    "notebook.defaultFormatter": "ms-python.black-formatter",
+    "notebook.lineNumbers": "on",
+    "notebook.output.textLineLimit": 100,
     //############### LATEX #########################
     "latex-workshop.view.pdf.viewer": "tab",
     //############### PYTHON ########################
@@ -64,13 +79,12 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.tabSize": 4,
-        "editor.wordBasedSuggestions": false,
     },
     //############### RUST ##########################
     // "rust-analyzer.check.command": "check",
     "[rust]": {
         "editor.tabSize": 4,
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions": "off",
     },
     //############### SQL ########################
     "[sql]": {
@@ -97,8 +111,6 @@
         "editor.minimap.enabled": false,
         "editor.renderWhitespace": "none"
     },
-    "editor.semanticHighlighting.enabled": true,
-    "security.workspace.trust.untrustedFiles": "open",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
@@ -111,9 +123,6 @@
     "yaml.schemas": {
         "file:///Users/hari/.vscode/extensions/atlassian.atlascode-2.10.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
-    "redhat.telemetry.enabled": false,
-    "workbench.colorTheme": "GitHub Dark Dimmed",
-    "window.commandCenter": true,
     "vs-kubernetes": {
         "vscode-kubernetes.minikube-path.mac": "/Users/hari/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
         "vscode-kubernetes.helm-path.mac": "/Users/hari/.vs-kubernetes/tools/helm/darwin-arm64/helm"
