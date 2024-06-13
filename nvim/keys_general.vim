@@ -9,7 +9,7 @@ vnoremap > >gv
 
 " Select word
 nnoremap ,w viw
-
+nnoremap ,b :call VSCodeNotify('bigqueryRunner.run')<CR>
 
 " Yank from the cursor to the end of the line
 nnoremap Y y$
@@ -140,8 +140,8 @@ nnoremap <silent> <Space>bk :call VSCodeNotify('workbench.action.closeActiveEdit
 nnoremap <silent> <Space>bN :call VSCodeNotify('workbench.action.files.newUntitledFile')<CR>
 
 
-nnoremap <silent> <Space>cd :call VSCodeNotify('editor.action.revealDefinition')<CR>
 " +code
+nnoremap <silent> <Space>cd :call VSCodeNotify('editor.action.revealDefinition')<CR>
 nnoremap <silent> <Space>ch :call VSCodeNotify('editor.action.showHover')<CR>
 nnoremap <silent> <Space>ci :call VSCodeNotify('editor.action.revealDefinitionAside')<CR>
 nnoremap <silent> <Space>cr :call VSCodeNotify('editor.action.goToReferences')<CR>
@@ -301,6 +301,7 @@ nnoremap <silent> <Space>to :call VSCodeNotify('C_Cpp.SwitchHeaderSource')<CR>
 nnoremap <silent> <Space>tp :call VSCodeNotify('workbench.actions.view.toggleProblems')<CR>
 nnoremap <silent> <Space>tl :call VSCodeNotify('workbench.action.toggleEditorGroupLayout')<CR>
 nnoremap <silent> <Space>tw :call VSCodeNotify('workbench.action.toggleWordWrap')<CR>
+nnoremap <silent> <Space>tz :call VSCodeNotify('workbench.action.toggleZenMode')<CR>
 
 
 " +window
