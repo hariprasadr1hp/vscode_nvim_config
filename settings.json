@@ -49,6 +49,17 @@
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.inheritEnv": false,
     //###############################################
+    // NEOVIM   #####################################
+    //###############################################
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/hari/.config/User/nvim/init.vim",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.darwin": "/Users/hari/Library/Application Support/Code/User/nvim/init.vim",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.logOutputToConsole": true,
+    //###############################################
     // CODING ENVIRONMENT   #########################
     //###############################################
     "code-runner.clearPreviousOutput": true,
@@ -68,7 +79,7 @@
     "http.proxySupport": "off",
     //############### JUPYTER #######################
     "notebook.defaultFormatter": "ms-python.black-formatter",
-    "notebook.lineNumbers": "on",
+    // "notebook.lineNumbers": "on",
     "notebook.output.textLineLimit": 100,
     //############### LATEX #########################
     "latex-workshop.view.pdf.viewer": "tab",
@@ -92,17 +103,6 @@
     },
     //################ SVG ##########################
     "svg.preview.mode": "svg",
-    //###############################################
-    // NEOVIM   #####################################
-    //###############################################
-    //"vscode-neovim.neovimInitVimPaths.linux": "/Users/hari/Library/Application Support/Code/User/nvim/init.vim",
-    "vscode-neovim.neovimInitVimPaths.darwin": "/Users/hari/Library/Application Support/Code/User/nvim/init.vim",
-    //"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-    "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
-    "vscode-neovim.logOutputToConsole": true,
     //###############################################
     // MAGIT ########################################
     //###############################################
@@ -137,6 +137,11 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "cmake.showOptionsMovedNotification": false,
+    "workbench.activityBar.location": "hidden",
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
     },
     //###############################################
 }
