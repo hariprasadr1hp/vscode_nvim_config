@@ -5,14 +5,26 @@
   //###############################################
   "code-runner.enableAppInsights": false,
   "gitlens.telemetry.enabled": false,
-  "redhat.telemetry.enabled": null,
   "postman.telemetry.enabled": false,
+  "jupyter.experiments.enabled": false,
+  "jupyter.experiments.optInto": [],
+  "jupyter.experiments.optOutFrom": [],
+  "python.analysis.reportExtraTelemetry": false,
+  "python.experiments.enabled": false,
+  "python.experiments.optInto": [],
+  "python.experiments.optOutFrom": [],
+  "redhat.telemetry.enabled": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "telemetry.telemetryLevel": "off",
   //###############################################
-  // SECURITY   ###################################
+  // SECURITY/PRIVACY   ###########################
   //###############################################
+  "github-actions.use-enterprise": false,
+  "gitlens.ai.experimental.generateCommitMessage.enabled": false,
+  "gitlens.cloudIntegrations.enabled": false,
+  "gitlens.integrations.enabled": false,
+  "gitlens.liveshare.enabled": false,
   "security.workspace.trust.untrustedFiles": "open",
   //###############################################
   // GUI CONFIG   #################################
@@ -23,18 +35,18 @@
   ],
   "editor.accessibilitySupport": "off",
   "editor.cursorBlinking": "solid",
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
-  "editor.formatOnType": true,
+  "editor.formatOnType": false,
   "editor.inlayHints.enabled": "off",
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "all",
   "editor.quickSuggestions": {
-    "other": true,
-    "comments": true,
-    "strings": true
+    "other": false,
+    "comments": false,
+    "strings": true,
   },
   "editor.semanticHighlighting.enabled": true,
   "editor.stickyScroll.enabled": false,
@@ -61,13 +73,13 @@
   //###############################################
   "terminal.explorerKind": "external",
   "terminal.integrated.allowedLinkSchemes": [
+    "docker-desktop",
     "file",
     "http",
     "https",
     "mailto",
     "vscode",
     "vscode-insiders",
-    "docker-desktop"
   ],
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.inheritEnv": false,
@@ -82,14 +94,6 @@
     "asvetliakov.vscode-neovim": 1
   },
   "vscode-neovim.logOutputToConsole": true,
-  //###############################################
-  // MAGIT ########################################
-  //###############################################
-  "[magit]": {
-    "editor.lineNumbers": "on",
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "none"
-  },
   //###############################################
   // KUBERNETES ###################################
   //###############################################
@@ -142,6 +146,12 @@
   },
   //############### LATEX #########################
   "latex-workshop.view.pdf.viewer": "tab",
+  //############### MAGIT #########################
+  "[magit]": {
+    "editor.lineNumbers": "on",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none"
+  },
   //############## MARKDOWN #######################
   "[markdown]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
