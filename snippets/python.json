@@ -184,7 +184,7 @@
 		"prefix": "jjsonWrite",
 		"body": [
 			"with open(file='${1:FILENAME}.json', mode='w', encoding='utf-8') as wf:",
-			"\tjson.dump(${2:CONTENTS}, wf, indent=4, sort_keys=False)",
+			"\tjson.dump(${2:CONTENTS}, wf, indent=2, sort_keys=False)",
 			"$0"
 		],
 		"description": "hp write a JSON file"

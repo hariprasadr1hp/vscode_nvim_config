@@ -14,6 +14,9 @@ nnoremap ,b :call VSCodeNotify('bigqueryRunner.run')<CR>
 " Yank from the cursor to the end of the line
 nnoremap Y y$
 
+" `bn` as escape from insert mode
+inoremap bn <Esc>
+
 
 " Within vscode
 " comma shortcuts
@@ -137,7 +140,9 @@ vnoremap <silent> <Space>alu di\underline{}<Esc>hp
 " +buffer
 nnoremap <silent> <Space>bb :call VSCodeNotify('workbench.action.quickOpen')<CR>
 nnoremap <silent> <Space>bk :call VSCodeNotify('workbench.action.closeActiveEditor')<CR>
+nnoremap <silent> <Space>bK :call VSCodeNotify('workbench.action.closeAllEditors')<CR>
 nnoremap <silent> <Space>bN :call VSCodeNotify('workbench.action.files.newUntitledFile')<CR>
+nnoremap <silent> <Space>bO :call VSCodeNotify('workbench.action.closeOtherEditors')<CR>
 
 
 " +code
@@ -168,42 +173,6 @@ nnoremap <silent> <Space>fz :call VSCodeNotify('workbench.action.toggleZenMode')
 
 
 " +git
-" b - Magit switch branch
-" B - Magit blame
-" c - +create
-" cb - Branch
-" cc - Commit
-" cf - Fixup
-" ci - issue
-" cp - Pull request
-" cr - Initialize repo
-" cR - Clone repo
-" C - Clone
-" D - Magit file delete
-" f - +find
-" F - Magit fetch
-" g - Magit status
-" G - Magit status here
-" l - +list
-" L - Magit buffer log
-" o - +open in browser
-" r - Revert hunk
-" R - Revert file
-" s - Git stage hunk
-" S - Git stage file
-" t - Git time machine
-" U - Git unstage file
-" y - Copy link to remote
-" Y - Copy link to homepage
-nnoremap <silent> <Space>gB :call VSCodeNotify('magit.blame-file')<CR>
-nnoremap <silent> <Space>gg :call VSCodeNotify('magit.status')<CR>
-nnoremap <silent> <Space>gS :call VSCodeNotify('magit.stage')<CR>
-nnoremap <silent> <Space>gF :call VSCodeNotify('magit.fetching')<CR>
-nnoremap <silent> <Space>gL :call VSCodeNotify('magit.logging')<CR>
-nnoremap <silent> <Space>gb :call VSCodeNotify('magit.branching')<CR>
-nnoremap <silent> <Space>gy :call VSCodeNotify('magit.remoting')<CR>
-nnoremap <silent> <Space>gh :call VSCodeNotify('magit.help')<CR>
-nnoremap <silent> <Space>gg :call VSCodeNotify('magit.status')<CR>
 
 
 " +help

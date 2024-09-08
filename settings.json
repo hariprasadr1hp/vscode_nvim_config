@@ -35,9 +35,9 @@
   ],
   "editor.accessibilitySupport": "off",
   "editor.cursorBlinking": "solid",
-  "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
-  "editor.formatOnType": false,
+  // "editor.formatOnPaste": true,
+  // "editor.formatOnSave": true,
+  // "editor.formatOnType": true,
   "editor.inlayHints.enabled": "off",
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
@@ -56,8 +56,10 @@
   },
   "window.commandCenter": "never",
   "window.customTitleBarVisibility": "never",
+  "window.nativeFullScreen": false,
   "workbench.colorTheme": "GitHub Dark Default",
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.highlightModifiedTabs": true,
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": true,
   "workbench.settings.useSplitJSON": true,
@@ -154,7 +156,8 @@
   },
   //############## MARKDOWN #######################
   "[markdown]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": false,
   },
   //############### PYTHON ########################
   "code-runner.executorMap": {
@@ -162,7 +165,7 @@
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
   },
   //############### RUST ##########################
   // "rust-analyzer.check.command": "check",
@@ -172,7 +175,7 @@
   },
   //############### SQL ########################
   "[sql]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   //################ SVG ##########################
   "svg.preview.mode": "svg",
@@ -196,13 +199,19 @@
   //############### YAML ##########################
   "[yaml]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "yaml.schemas": {
-    "file:///Users/hari/.vscode/extensions/atlassian.atlascode-2.10.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/hari/.vscode/extensions/atlassian.atlascode-2.10.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
   },
   "[jinja-yaml]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "yaml.completion": true,
+  "yaml.extension.recommendations": "true",
+  "yaml.format.singleQuote": false,
+  "yaml.hover": true,
+  "yaml.schemaStore.enable": true,
+  "yaml.schemaStore.url": "https://www.schemastore.org/api/json/catalog.json",
 }
