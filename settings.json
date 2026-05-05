@@ -14,8 +14,6 @@
   "python.experiments.optInto": [],
   "python.experiments.optOutFrom": [],
   "redhat.telemetry.enabled": false,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
   "telemetry.telemetryLevel": "off",
   //###############################################
   // SECURITY/PRIVACY   ###########################
@@ -29,24 +27,27 @@
   //###############################################
   // GUI CONFIG   #################################
   //###############################################
+  "editor.accessibilitySupport": "off",
+  "editor.cursorBlinking": "solid",
   "editor.fontSize": 16,
+  // "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  // "editor.formatOnType": true,
+  "editor.guides.indentation": false,
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.inlayHints.enabled": "off",
+  "editor.lineNumbers": "relative",
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "none",
   "editor.rulers": [
     74
   ],
-  "editor.accessibilitySupport": "off",
-  "editor.cursorBlinking": "solid",
-  // "editor.formatOnPaste": true,
-  // "editor.formatOnSave": true,
-  // "editor.formatOnType": true,
-  "editor.inlayHints.enabled": "off",
-  "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderWhitespace": "all",
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
-    "strings": true,
+    "strings": true
   },
   "editor.semanticHighlighting.enabled": true,
   "editor.stickyScroll.enabled": false,
@@ -54,17 +55,21 @@
     "*.sql": "jinja-sql",
     "*.yml": "jinja-yaml"
   },
-  "window.commandCenter": "never",
+  "window.commandCenter": false,
   "window.customTitleBarVisibility": "never",
+  "window.menuStyle": "custom",
+  "window.nativeTabs": true,
   "window.nativeFullScreen": false,
-  "workbench.colorTheme": "GitHub Dark Default",
+  "window.titleBarStyle": "native",
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Mermaid Dark",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.showTabs": "none",
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": true,
   "workbench.settings.useSplitJSON": true,
   "workbench.sideBar.location": "left",
-  "workbench.startupEditor": "newUntitledFile",
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": true,
@@ -81,16 +86,16 @@
     "https",
     "mailto",
     "vscode",
-    "vscode-insiders",
+    "vscode-insiders"
   ],
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.inheritEnv": false,
   //###############################################
   // NEOVIM   #####################################
   //###############################################
-  "vscode-neovim.neovimInitVimPaths.linux": "/home/hari/.config/User/nvim/init.vim",
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/hari/Library/Application Support/Code/User/nvim/init.vim",
+  "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/init.lua",
+  "vscode-neovim.neovimExecutablePaths.linux": "~/.local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.lua",
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
@@ -100,15 +105,14 @@
   // KUBERNETES ###################################
   //###############################################
   "vs-kubernetes": {
-    "vscode-kubernetes.minikube-path.mac": "/Users/hari/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
-    "vscode-kubernetes.helm-path.mac": "/Users/hari/.vs-kubernetes/tools/helm/darwin-arm64/helm",
-    "vscode-kubernetes.helm-path-mac": "/Users/hari/.vs-kubernetes/tools/helm/darwin-arm64/helm"
+    "vscode-kubernetes.minikube-path.mac": "~/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vscode-kubernetes.helm-path.mac": "~/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.helm-path-mac": "~/.vs-kubernetes/tools/helm/darwin-arm64/helm"
   },
   //###############################################
   // CODING ENVIRONMENT   #########################
   //###############################################
   "code-runner.clearPreviousOutput": true,
-  "code-runner.enableAppInsights": false,
   "code-runner.showExecutionMessage": false,
   //############### CMAKE #########################
   "cmake.showOptionsMovedNotification": false,
@@ -117,34 +121,42 @@
     "editor.tabSize": 4,
     "editor.wordBasedSuggestions": "off"
   },
+  //################ CSS ##########################
+  "[css]": {
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.biome": "explicit"
+    }
+  },
+  //############### DBT #########################
+  "dbt.lineage.defaultDepth": 0,
   //############### HTML ########################
   "[html]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.codeActionsOnSave": {
+      "source.fixAll.biome": "explicit"
+    }
   },
   //############### HTTP ##########################
   "http.proxySupport": "off",
   //############## JAVASCRIPT #####################
   "[javascript]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "denoland.vscode-deno"
+    "editor.codeActionsOnSave": {
+      "source.fixAll.biome": "explicit"
+    }
   },
   //################ JSON #########################
   "[json]": {
-    // "editor.defaultFormatter": "denoland.vscode-deno",
-    "editor.tabSize": 2
-    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.biome": "explicit"
+    }
   },
   //############### JSONC #########################
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  //############### JUPYTER #######################
-  "notebook.defaultFormatter": "ms-python.black-formatter",
-  // "notebook.lineNumbers": "on",
-  "notebook.output.textLineLimit": 100,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
   },
   //############### LATEX #########################
   "latex-workshop.view.pdf.viewer": "tab",
@@ -155,17 +167,36 @@
     "editor.renderWhitespace": "none"
   },
   //############## MARKDOWN #######################
+  "ruff.format.preview": true,
   "[markdown]": {
-    "editor.defaultFormatter": "denoland.vscode-deno",
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  //############## MERMAID ########################
+  "mermaid-chat.enabled": false,
+  //############### NOTEBOOK ######################
+  "notebook.formatOnSave.enabled": true,
+  // "notebook.lineNumbers": "on",
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit",
+    "notebook.source.organizeImports": "explicit"
+  },
+  "notebook.output.textLineLimit": 100,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
   },
   //############### PYTHON ########################
   "code-runner.executorMap": {
     "python": "$pythonPath -u $fullFileName"
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
   },
   //############### RUST ##########################
   // "rust-analyzer.check.command": "check",
@@ -175,14 +206,16 @@
   },
   //############### SQL ########################
   "[sql]": {
-    "editor.tabSize": 2,
+    "editor.tabSize": 2
   },
   //################ SVG ##########################
   "svg.preview.mode": "svg",
   //############## TYPESCRIPT #####################
   "[typescript]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.biome": "explicit"
+    }
   },
   //############### SCSS ##########################
   "[scss]": {
@@ -199,11 +232,9 @@
   //############### YAML ##########################
   "[yaml]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "yaml.schemas": {
-    "file:///Users/hari/.vscode/extensions/atlassian.atlascode-2.10.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
-  },
+  "yaml.schemas": {},
   "[jinja-yaml]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "redhat.vscode-yaml"
@@ -214,4 +245,15 @@
   "yaml.hover": true,
   "yaml.schemaStore.enable": true,
   "yaml.schemaStore.url": "https://www.schemastore.org/api/json/catalog.json",
+  "workbench.startupEditor": "none",
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://biomejs.dev": true
+  }
 }
